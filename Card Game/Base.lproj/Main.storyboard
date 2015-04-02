@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nLV-R8-0nS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,881 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2M-9y-Iaz">
+                                <rect key="frame" x="16" y="510" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRw-le-x1P">
+                                <rect key="frame" x="153" y="472" width="294" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="CV8-rd-A6H"/>
+                                    <constraint firstAttribute="height" constant="21" id="HmY-Dq-MFI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="znU-17-1cr">
+                                <rect key="frame" x="254" y="503" width="93" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="4Oh-iS-CBb"/>
+                                    <constraint firstAttribute="height" constant="28" id="EMZ-vJ-ZLq"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="modeSelectorSegmentedControl:" destination="vXZ-lx-hvc" eventType="valueChanged" id="T0z-7i-1cR"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ou-SZ-0sz">
+                                <rect key="frame" x="553" y="501" width="31" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Deal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dealButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rKv-0c-Dps"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cy-vS-DW5">
+                                <rect key="frame" x="175" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="AeS-Q3-3pb"/>
+                                    <constraint firstAttribute="height" constant="90" id="Yvu-4s-3Qh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="D7f-Ob-S4f"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="If0-bD-dxl">
+                                <rect key="frame" x="175" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="OF6-Sx-Gfe"/>
+                                    <constraint firstAttribute="width" constant="64" id="Qmw-qw-Dem"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M0x-2F-Byl"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzS-VF-FeR">
+                                <rect key="frame" x="269" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="HVl-yI-i8O"/>
+                                    <constraint firstAttribute="height" constant="90" id="YfD-0k-JYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2c3-Kl-1vg"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFZ-y5-Xvc">
+                                <rect key="frame" x="269" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8DL-Ku-KkZ"/>
+                                    <constraint firstAttribute="width" constant="64" id="fX8-c8-Rer"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0te-GI-zcT"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1m-YY-rko">
+                                <rect key="frame" x="363" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="C8q-dj-D3y"/>
+                                    <constraint firstAttribute="width" constant="64" id="QVg-LQ-x6g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0sy-12-qaT"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYr-fl-qtb">
+                                <rect key="frame" x="363" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="1cy-W0-OsM"/>
+                                    <constraint firstAttribute="height" constant="90" id="Aub-3V-uNV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="l7d-Gf-IY6"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psP-F3-f01">
+                                <rect key="frame" x="363" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="THS-Eu-GcT"/>
+                                    <constraint firstAttribute="width" constant="64" id="uHS-oH-Xbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TUQ-cE-WrM"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-Wn-8yT">
+                                <rect key="frame" x="175" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Y3L-b3-t0Q"/>
+                                    <constraint firstAttribute="height" constant="90" id="agm-79-WvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vTk-RB-ixf"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psR-sJ-nAx">
+                                <rect key="frame" x="269" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="kv0-oI-c4c"/>
+                                    <constraint firstAttribute="width" constant="64" id="r9e-QU-Wth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bCO-J0-IEq"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hJ-dZ-HnZ">
+                                <rect key="frame" x="363" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="RPC-Jn-gUo"/>
+                                    <constraint firstAttribute="width" constant="64" id="qdz-Hw-yy3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mql-OC-EOK"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs7-ix-2de">
+                                <rect key="frame" x="175" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="YcX-L4-J5d"/>
+                                    <constraint firstAttribute="width" constant="64" id="j8l-E4-hbT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EiT-9j-eTd"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWh-wT-EkG">
+                                <rect key="frame" x="269" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Mnr-9Q-NUZ"/>
+                                    <constraint firstAttribute="width" constant="64" id="dV1-2V-8hX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QIy-6U-SzA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="psP-F3-f01" firstAttribute="leading" secondItem="k1m-YY-rko" secondAttribute="leading" id="093-HC-9mX"/>
+                            <constraint firstItem="4Cy-vS-DW5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="47j-Zs-nBe"/>
+                            <constraint firstItem="VWh-wT-EkG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="4XI-bd-foe"/>
+                            <constraint firstItem="6sJ-Wn-8yT" firstAttribute="leading" secondItem="4Cy-vS-DW5" secondAttribute="leading" id="5Mr-Lf-USg"/>
+                            <constraint firstItem="k1m-YY-rko" firstAttribute="top" secondItem="4hJ-dZ-HnZ" secondAttribute="bottom" constant="20" id="5xU-5k-Kh3"/>
+                            <constraint firstAttribute="centerX" secondItem="PRw-le-x1P" secondAttribute="centerX" id="6CQ-zE-r0T"/>
+                            <constraint firstItem="VWh-wT-EkG" firstAttribute="leading" secondItem="4Cy-vS-DW5" secondAttribute="trailing" constant="30" id="7my-od-nK3"/>
+                            <constraint firstItem="psP-F3-f01" firstAttribute="leading" secondItem="nYr-fl-qtb" secondAttribute="leading" id="8bG-z7-SVY"/>
+                            <constraint firstItem="7ou-SZ-0sz" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8n1-Xf-hdc"/>
+                            <constraint firstItem="6sJ-Wn-8yT" firstAttribute="top" secondItem="4Cy-vS-DW5" secondAttribute="bottom" constant="20" id="CFi-th-Ctz"/>
+                            <constraint firstItem="psP-F3-f01" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Cu8-pf-AfN"/>
+                            <constraint firstAttribute="centerX" secondItem="VWh-wT-EkG" secondAttribute="centerX" id="E21-g0-XJ5"/>
+                            <constraint firstItem="7ou-SZ-0sz" firstAttribute="trailing" secondItem="h2M-9y-Iaz" secondAttribute="trailing" id="HIu-4G-2CP"/>
+                            <constraint firstItem="psP-F3-f01" firstAttribute="leading" secondItem="4hJ-dZ-HnZ" secondAttribute="leading" id="ICy-3q-ZqO"/>
+                            <constraint firstItem="h2M-9y-Iaz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IX6-Cw-y1G"/>
+                            <constraint firstItem="psP-F3-f01" firstAttribute="leading" secondItem="VWh-wT-EkG" secondAttribute="trailing" constant="30" id="JpN-DG-bIB"/>
+                            <constraint firstItem="If0-bD-dxl" firstAttribute="leading" secondItem="Xs7-ix-2de" secondAttribute="leading" id="NX2-nm-k7A"/>
+                            <constraint firstItem="DzS-VF-FeR" firstAttribute="top" secondItem="aFZ-y5-Xvc" secondAttribute="bottom" constant="20" id="PgR-Ue-TYT"/>
+                            <constraint firstItem="psR-sJ-nAx" firstAttribute="top" secondItem="VWh-wT-EkG" secondAttribute="bottom" constant="20" id="QH6-LF-Pdc"/>
+                            <constraint firstItem="If0-bD-dxl" firstAttribute="leading" secondItem="4Cy-vS-DW5" secondAttribute="leading" id="QSo-EG-p0G"/>
+                            <constraint firstItem="VWh-wT-EkG" firstAttribute="leading" secondItem="psR-sJ-nAx" secondAttribute="leading" id="Qos-dg-dnb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="znU-17-1cr" secondAttribute="bottom" constant="20" id="Tyq-5A-HH6"/>
+                            <constraint firstItem="If0-bD-dxl" firstAttribute="leading" secondItem="6sJ-Wn-8yT" secondAttribute="leading" id="UcO-1V-tFc"/>
+                            <constraint firstItem="DzS-VF-FeR" firstAttribute="leading" secondItem="psR-sJ-nAx" secondAttribute="leading" id="WZE-o6-AZv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7ou-SZ-0sz" secondAttribute="bottom" constant="20" id="Xh3-GB-n5L"/>
+                            <constraint firstItem="znU-17-1cr" firstAttribute="top" secondItem="PRw-le-x1P" secondAttribute="bottom" constant="10" id="XlN-NA-Keu"/>
+                            <constraint firstItem="If0-bD-dxl" firstAttribute="top" secondItem="Xs7-ix-2de" secondAttribute="bottom" constant="20" id="bMM-sh-hQf"/>
+                            <constraint firstItem="nYr-fl-qtb" firstAttribute="top" secondItem="k1m-YY-rko" secondAttribute="bottom" constant="20" id="eGZ-X6-kZG"/>
+                            <constraint firstItem="aFZ-y5-Xvc" firstAttribute="top" secondItem="psR-sJ-nAx" secondAttribute="bottom" constant="20" id="jPA-Uy-Xh3"/>
+                            <constraint firstItem="Xs7-ix-2de" firstAttribute="top" secondItem="6sJ-Wn-8yT" secondAttribute="bottom" constant="20" id="l9p-Qf-dXk"/>
+                            <constraint firstItem="4hJ-dZ-HnZ" firstAttribute="top" secondItem="psP-F3-f01" secondAttribute="bottom" constant="20" id="lAf-oq-x81"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h2M-9y-Iaz" secondAttribute="bottom" constant="20" id="mMV-Vh-EqE"/>
+                            <constraint firstAttribute="centerX" secondItem="znU-17-1cr" secondAttribute="centerX" id="o0U-7G-CwA"/>
+                            <constraint firstItem="DzS-VF-FeR" firstAttribute="leading" secondItem="aFZ-y5-Xvc" secondAttribute="leading" id="vFB-WO-0Tl"/>
+                            <constraint firstItem="DzS-VF-FeR" firstAttribute="leading" secondItem="VWh-wT-EkG" secondAttribute="leading" id="vq1-DI-fqn"/>
+                            <constraint firstItem="4hJ-dZ-HnZ" firstAttribute="leading" secondItem="psP-F3-f01" secondAttribute="leading" id="w5A-jj-zpf"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ni8-qd-Rqt"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="PRw-le-x1P" id="rwJ-KL-1VR"/>
+                        <outlet property="scoreLabel" destination="h2M-9y-Iaz" id="qqG-dz-QH6"/>
+                        <outletCollection property="cardButtons" destination="4Cy-vS-DW5" id="0iV-6i-R35"/>
+                        <outletCollection property="cardButtons" destination="VWh-wT-EkG" id="55x-Fk-VXc"/>
+                        <outletCollection property="cardButtons" destination="psP-F3-f01" id="Arq-wx-9m0"/>
+                        <outletCollection property="cardButtons" destination="6sJ-Wn-8yT" id="All-Q4-u4m"/>
+                        <outletCollection property="cardButtons" destination="psR-sJ-nAx" id="Xx8-YX-K71"/>
+                        <outletCollection property="cardButtons" destination="4hJ-dZ-HnZ" id="dgd-Cr-pR1"/>
+                        <outletCollection property="cardButtons" destination="Xs7-ix-2de" id="96H-Sm-Uct"/>
+                        <outletCollection property="cardButtons" destination="aFZ-y5-Xvc" id="8BN-uc-bDS"/>
+                        <outletCollection property="cardButtons" destination="k1m-YY-rko" id="O7J-yD-jhy"/>
+                        <outletCollection property="cardButtons" destination="If0-bD-dxl" id="CkZ-bW-qgf"/>
+                        <outletCollection property="cardButtons" destination="DzS-VF-FeR" id="wtu-ia-rhd"/>
+                        <outletCollection property="cardButtons" destination="nYr-fl-qtb" id="6Hr-lu-DCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2937" y="455"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="msV-Pr-HKB">
+            <objects>
+                <viewController id="08E-fA-w8f" customClass="SetCardGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iQe-xG-DJJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5cr-7O-hSy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wEW-7z-9MZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-5M-V8A">
+                                <rect key="frame" x="152" y="20" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="ByJ-6E-h4B"/>
+                                    <constraint firstAttribute="width" constant="79" id="F4d-VP-Uxe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="gcO-c5-9v5"/>
+                                    <constraint firstAttribute="height" constant="110" id="wqg-D6-79b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="cgf-6m-F2I"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05K-ts-P0a">
+                                <rect key="frame" x="370" y="20" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="IrO-5M-FJy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="Jqm-M8-7z6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="V2t-hH-hYa"/>
+                                    <constraint firstAttribute="height" constant="110" id="vYX-NE-eyT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="WAI-Gg-Lmi"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3o-tw-TfE">
+                                <rect key="frame" x="152" y="410" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="hm7-V3-ssW"/>
+                                    <constraint firstAttribute="width" constant="79" id="wel-9K-vdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="cCB-7A-SnZ"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXu-sC-WGX">
+                                <rect key="frame" x="152" y="150" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="FtO-wl-KjS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="JcV-dr-CKp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="LkL-GH-EOa"/>
+                                    <constraint firstAttribute="height" constant="110" id="Wep-2Q-Qql"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="XaL-gc-Nlp"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShJ-OW-czg">
+                                <rect key="frame" x="261" y="150" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="RTW-34-T9F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="Zkm-ZU-T2B"/>
+                                    <constraint firstAttribute="width" constant="79" id="tmx-yk-ab7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="tra-gh-mo7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="nj1-xI-eO6"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-ew-Pmq">
+                                <rect key="frame" x="370" y="150" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="So1-MU-Sf8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="Zgu-X4-CRA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="iZ7-HX-pkj"/>
+                                    <constraint firstAttribute="width" constant="79" id="yqK-jv-x8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="5Ir-PQ-VpU"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-ee-Dox">
+                                <rect key="frame" x="261" y="410" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="IMf-XU-fUA"/>
+                                    <constraint firstAttribute="width" constant="79" id="roN-KD-dOY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="y5W-LF-K0S"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmn-PD-6IG">
+                                <rect key="frame" x="152" y="280" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Oxt-xl-OQJ"/>
+                                    <constraint firstAttribute="height" constant="110" id="n4F-4l-dCe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="b0X-Df-nt7"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V70-U9-8uI">
+                                <rect key="frame" x="261" y="280" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="nQZ-ca-bla"/>
+                                    <constraint firstAttribute="height" constant="110" id="smS-qn-7uN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="LxN-lh-v6p"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivw-93-tRZ">
+                                <rect key="frame" x="370" y="280" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="cnU-za-x1r"/>
+                                    <constraint firstAttribute="height" constant="110" id="woG-Tp-Qdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="3st-rz-Trz"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1b-uA-CkB">
+                                <rect key="frame" x="370" y="410" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="VLz-jD-ZfM"/>
+                                    <constraint firstAttribute="width" constant="79" id="rTY-5C-uyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="cem-lt-ali"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brf-h5-R6K">
+                                <rect key="frame" x="261" y="20" width="79" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="8bE-eU-AAN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="LZY-ix-k6i"/>
+                                    <constraint firstAttribute="width" constant="79" id="ngB-L0-OHI"/>
+                                    <constraint firstAttribute="height" constant="110" id="w58-bL-RXn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="cP8-cX-0OS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvc-iX-nfm">
+                                <rect key="frame" x="16" y="510" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sA-XE-3Y8">
+                                <rect key="frame" x="153" y="472" width="294" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="a2M-1I-MUR"/>
+                                    <constraint firstAttribute="height" constant="21" id="uNs-kQ-np4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Y-Xx-NjG">
+                                <rect key="frame" x="522" y="501" width="62" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3W9-WK-8Bm"/>
+                                    <constraint firstAttribute="width" constant="53" id="FM6-Th-QyS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="L90-xo-i7z"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dealButton:" destination="08E-fA-w8f" eventType="touchUpInside" id="jqz-IX-EBC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="R3o-tw-TfE" firstAttribute="leading" secondItem="lXu-sC-WGX" secondAttribute="leading" id="1kw-Ui-haY"/>
+                            <constraint firstItem="rvp-ee-Dox" firstAttribute="leading" secondItem="brf-h5-R6K" secondAttribute="leading" id="1lh-MM-X0X"/>
+                            <constraint firstAttribute="centerX" secondItem="7sA-XE-3Y8" secondAttribute="centerX" id="2gq-zg-gUp"/>
+                            <constraint firstItem="ivw-93-tRZ" firstAttribute="top" secondItem="YVy-ew-Pmq" secondAttribute="bottom" constant="20" id="3mV-c0-Loq"/>
+                            <constraint firstItem="5cr-7O-hSy" firstAttribute="top" secondItem="K0Y-Xx-NjG" secondAttribute="bottom" constant="20" id="450-gK-soP"/>
+                            <constraint firstItem="brf-h5-R6K" firstAttribute="leading" secondItem="ShJ-OW-czg" secondAttribute="leading" id="5Yr-SJ-lnr"/>
+                            <constraint firstItem="brf-h5-R6K" firstAttribute="top" secondItem="iQe-xG-DJJ" secondAttribute="bottom" id="6g4-Or-TKg"/>
+                            <constraint firstItem="bmn-PD-6IG" firstAttribute="top" secondItem="lXu-sC-WGX" secondAttribute="bottom" constant="20" id="6vk-nx-bzj"/>
+                            <constraint firstItem="rvp-ee-Dox" firstAttribute="leading" secondItem="V70-U9-8uI" secondAttribute="leading" id="BhX-xv-aNZ"/>
+                            <constraint firstItem="V70-U9-8uI" firstAttribute="top" secondItem="ShJ-OW-czg" secondAttribute="bottom" constant="20" id="EPi-Iy-3Vs"/>
+                            <constraint firstItem="brf-h5-R6K" firstAttribute="leading" secondItem="OG8-5M-V8A" secondAttribute="trailing" constant="30" id="EYT-Sr-OXM"/>
+                            <constraint firstItem="R3o-tw-TfE" firstAttribute="leading" secondItem="OG8-5M-V8A" secondAttribute="leading" id="Eif-4u-lYm"/>
+                            <constraint firstItem="r1b-uA-CkB" firstAttribute="top" secondItem="ivw-93-tRZ" secondAttribute="bottom" constant="20" id="ItE-yl-Apn"/>
+                            <constraint firstItem="R3o-tw-TfE" firstAttribute="top" secondItem="bmn-PD-6IG" secondAttribute="bottom" constant="20" id="Iv9-Wc-x8v"/>
+                            <constraint firstItem="YVy-ew-Pmq" firstAttribute="top" secondItem="05K-ts-P0a" secondAttribute="bottom" constant="20" id="Jae-mM-SAO"/>
+                            <constraint firstItem="qvc-iX-nfm" firstAttribute="leading" secondItem="wEW-7z-9MZ" secondAttribute="leadingMargin" id="JrP-SV-IsN"/>
+                            <constraint firstAttribute="centerX" secondItem="brf-h5-R6K" secondAttribute="centerX" id="P10-AU-9L2"/>
+                            <constraint firstItem="K0Y-Xx-NjG" firstAttribute="trailing" secondItem="qvc-iX-nfm" secondAttribute="trailing" id="VCE-7X-8Py"/>
+                            <constraint firstItem="OG8-5M-V8A" firstAttribute="top" secondItem="iQe-xG-DJJ" secondAttribute="bottom" id="VKJ-eq-P21"/>
+                            <constraint firstItem="05K-ts-P0a" firstAttribute="top" secondItem="iQe-xG-DJJ" secondAttribute="bottom" id="Vqy-py-G15"/>
+                            <constraint firstItem="rvp-ee-Dox" firstAttribute="top" secondItem="V70-U9-8uI" secondAttribute="bottom" constant="20" id="XZt-Lv-lnb"/>
+                            <constraint firstItem="R3o-tw-TfE" firstAttribute="leading" secondItem="bmn-PD-6IG" secondAttribute="leading" id="Zvx-9W-J0F"/>
+                            <constraint firstItem="rvp-ee-Dox" firstAttribute="leading" secondItem="ShJ-OW-czg" secondAttribute="leading" id="cP2-Ed-HCL"/>
+                            <constraint firstItem="5cr-7O-hSy" firstAttribute="top" secondItem="qvc-iX-nfm" secondAttribute="bottom" constant="20" id="hLe-mQ-BY7"/>
+                            <constraint firstItem="YVy-ew-Pmq" firstAttribute="leading" secondItem="05K-ts-P0a" secondAttribute="leading" id="ie1-fK-tsw"/>
+                            <constraint firstItem="K0Y-Xx-NjG" firstAttribute="trailing" secondItem="wEW-7z-9MZ" secondAttribute="trailingMargin" id="lUZ-yh-COP"/>
+                            <constraint firstItem="lXu-sC-WGX" firstAttribute="top" secondItem="OG8-5M-V8A" secondAttribute="bottom" constant="20" id="m43-71-qHo"/>
+                            <constraint firstItem="lXu-sC-WGX" firstAttribute="leading" secondItem="OG8-5M-V8A" secondAttribute="leading" id="mrW-dR-5f9"/>
+                            <constraint firstItem="05K-ts-P0a" firstAttribute="leading" secondItem="YVy-ew-Pmq" secondAttribute="leading" id="pkJ-Fi-cpb"/>
+                            <constraint firstItem="05K-ts-P0a" firstAttribute="leading" secondItem="ivw-93-tRZ" secondAttribute="leading" id="psz-sX-T63"/>
+                            <constraint firstItem="05K-ts-P0a" firstAttribute="leading" secondItem="brf-h5-R6K" secondAttribute="trailing" constant="30" id="vhm-bv-SSQ"/>
+                            <constraint firstItem="ShJ-OW-czg" firstAttribute="top" secondItem="brf-h5-R6K" secondAttribute="bottom" constant="20" id="yAA-HK-zk1"/>
+                            <constraint firstItem="05K-ts-P0a" firstAttribute="leading" secondItem="r1b-uA-CkB" secondAttribute="leading" id="zXN-p7-Evs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EBZ-QI-TGC"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="7sA-XE-3Y8" id="IGa-mL-kP1"/>
+                        <outlet property="scoreLabel" destination="qvc-iX-nfm" id="AaW-fM-3ur"/>
+                        <outletCollection property="cardButtons" destination="OG8-5M-V8A" id="jzb-bx-yYq"/>
+                        <outletCollection property="cardButtons" destination="brf-h5-R6K" id="dSo-8h-DyS"/>
+                        <outletCollection property="cardButtons" destination="05K-ts-P0a" id="svP-Qf-KmZ"/>
+                        <outletCollection property="cardButtons" destination="lXu-sC-WGX" id="OE1-SA-VPM"/>
+                        <outletCollection property="cardButtons" destination="ShJ-OW-czg" id="a7f-BR-2bo"/>
+                        <outletCollection property="cardButtons" destination="YVy-ew-Pmq" id="Bra-nH-AUZ"/>
+                        <outletCollection property="cardButtons" destination="bmn-PD-6IG" id="dy7-pp-0cU"/>
+                        <outletCollection property="cardButtons" destination="V70-U9-8uI" id="A9x-zn-HLs"/>
+                        <outletCollection property="cardButtons" destination="ivw-93-tRZ" id="BQ9-Xz-FQT"/>
+                        <outletCollection property="cardButtons" destination="R3o-tw-TfE" id="UCu-YJ-4gn"/>
+                        <outletCollection property="cardButtons" destination="rvp-ee-Dox" id="Dex-vy-Wyn"/>
+                        <outletCollection property="cardButtons" destination="r1b-uA-CkB" id="0du-bw-dab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJd-nY-fC3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="1379"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0vO-tN-D2v">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nLV-R8-0nS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="X1T-gI-27J">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="kU8-Ta-t7j"/>
+                        <segue destination="08E-fA-w8f" kind="relationship" relationship="viewControllers" id="zX2-Ot-XJp"/>
+                        <segue destination="qyr-yd-Omw" kind="relationship" relationship="viewControllers" id="AEh-6R-qqE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwj-QY-xyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="849"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ovc-jJ-VaR">
+            <objects>
+                <viewController id="qyr-yd-Omw" customClass="BetterPlayingCardGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tFk-93-mi5"/>
+                        <viewControllerLayoutGuide type="bottom" id="kLn-iG-x2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vta-M2-prL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azj-H2-lxE">
+                                <rect key="frame" x="16" y="510" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOC-X7-kxD">
+                                <rect key="frame" x="153" y="472" width="294" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="lyW-k8-SYA"/>
+                                    <constraint firstAttribute="height" constant="21" id="oVm-3G-3ew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yjq-g1-ltx">
+                                <rect key="frame" x="254" y="503" width="93" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="Kpg-YW-uQA"/>
+                                    <constraint firstAttribute="height" constant="28" id="x7w-Ce-po5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="modeSelectorSegmentedControl:" destination="qyr-yd-Omw" eventType="valueChanged" id="O0n-Xf-oi0"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-eu-dED">
+                                <rect key="frame" x="553" y="501" width="31" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Deal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dealButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Pxg-9Y-IaR"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-p6-UWe">
+                                <rect key="frame" x="175" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3Ue-Aq-kwu"/>
+                                    <constraint firstAttribute="height" constant="90" id="OZL-iF-MB4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="RGL-6H-Hh3"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF6-bJ-TGe">
+                                <rect key="frame" x="175" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Boc-Ij-Na8"/>
+                                    <constraint firstAttribute="height" constant="90" id="ewt-9n-YKk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Z5V-A3-ach"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7On-30-riU">
+                                <rect key="frame" x="269" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="HPo-5P-Vuz"/>
+                                    <constraint firstAttribute="width" constant="64" id="Ob9-DW-3yW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="6Nc-f2-gpl"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8r-2W-fog">
+                                <rect key="frame" x="269" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Q9a-Zl-6Xh"/>
+                                    <constraint firstAttribute="height" constant="90" id="poD-1O-7tf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="4uf-7a-OFv"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDi-AO-Hne">
+                                <rect key="frame" x="363" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="ZBr-DM-xHN"/>
+                                    <constraint firstAttribute="height" constant="90" id="wzo-ZC-V3Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="osS-DV-SMk"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-3X-08V">
+                                <rect key="frame" x="363" y="350" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="fKK-HL-Ag3"/>
+                                    <constraint firstAttribute="height" constant="90" id="v1z-vv-pij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Uro-5U-fy1"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fed-K8-ZtB">
+                                <rect key="frame" x="363" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="72S-Ch-G4V"/>
+                                    <constraint firstAttribute="width" constant="64" id="Qm9-in-uEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="7lV-VD-QRv"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-Vs-vKw">
+                                <rect key="frame" x="175" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3Sb-O3-rzb"/>
+                                    <constraint firstAttribute="height" constant="90" id="s0l-l8-C2M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="TuC-SV-7QM"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-U0-Vsw">
+                                <rect key="frame" x="269" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="EaP-Xk-M0g"/>
+                                    <constraint firstAttribute="height" constant="90" id="tFr-5N-8s2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="0j0-B7-ux0"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFo-2E-HjG">
+                                <rect key="frame" x="363" y="130" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="B5S-3n-65L"/>
+                                    <constraint firstAttribute="width" constant="64" id="Ifx-sE-Yxk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="iJl-b8-eos"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WA-Yt-gwN">
+                                <rect key="frame" x="175" y="240" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="LI6-6w-D62"/>
+                                    <constraint firstAttribute="width" constant="64" id="jq6-Ae-A6P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Vvk-ls-Cih"/>
+                                </connections>
+                            </button>
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kej-8H-Qdj">
+                                <rect key="frame" x="269" y="20" width="64" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="afc-Kp-nFV"/>
+                                    <constraint firstAttribute="height" constant="90" id="mDP-88-K3b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="" image="waterlooLogo" backgroundImage="cardBack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="bc4-Z6-YSE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fed-K8-ZtB" firstAttribute="top" secondItem="tFk-93-mi5" secondAttribute="bottom" id="0Hc-Mb-P8U"/>
+                            <constraint firstItem="Azj-H2-lxE" firstAttribute="leading" secondItem="vta-M2-prL" secondAttribute="leadingMargin" id="0IA-8a-m17"/>
+                            <constraint firstItem="Fed-K8-ZtB" firstAttribute="leading" secondItem="GDi-AO-Hne" secondAttribute="leading" id="0g1-Mh-Rk6"/>
+                            <constraint firstItem="RF6-bJ-TGe" firstAttribute="leading" secondItem="UMV-p6-UWe" secondAttribute="leading" id="3xM-6l-dCQ"/>
+                            <constraint firstItem="Kej-8H-Qdj" firstAttribute="top" secondItem="tFk-93-mi5" secondAttribute="bottom" id="6U9-gT-CSc"/>
+                            <constraint firstAttribute="centerX" secondItem="BOC-X7-kxD" secondAttribute="centerX" id="AbZ-r2-hRM"/>
+                            <constraint firstItem="Yjq-g1-ltx" firstAttribute="top" secondItem="BOC-X7-kxD" secondAttribute="bottom" constant="10" id="D0B-9Z-v1B"/>
+                            <constraint firstItem="cmb-Vs-vKw" firstAttribute="leading" secondItem="UMV-p6-UWe" secondAttribute="leading" id="FkW-jb-ocZ"/>
+                            <constraint firstItem="mFo-2E-HjG" firstAttribute="top" secondItem="Fed-K8-ZtB" secondAttribute="bottom" constant="20" id="HW1-OE-Hqh"/>
+                            <constraint firstItem="OeC-U0-Vsw" firstAttribute="top" secondItem="Kej-8H-Qdj" secondAttribute="bottom" constant="20" id="Hci-sg-UIz"/>
+                            <constraint firstItem="8WA-Yt-gwN" firstAttribute="top" secondItem="cmb-Vs-vKw" secondAttribute="bottom" constant="20" id="Hgp-C7-rxe"/>
+                            <constraint firstItem="UMV-p6-UWe" firstAttribute="top" secondItem="tFk-93-mi5" secondAttribute="bottom" id="N6z-fu-x8z"/>
+                            <constraint firstItem="kLn-iG-x2O" firstAttribute="top" secondItem="Pba-eu-dED" secondAttribute="bottom" constant="20" id="Nfn-Vl-jkB"/>
+                            <constraint firstAttribute="centerX" secondItem="Yjq-g1-ltx" secondAttribute="centerX" id="Nst-Da-AKZ"/>
+                            <constraint firstItem="Pba-eu-dED" firstAttribute="trailing" secondItem="Azj-H2-lxE" secondAttribute="trailing" id="R9m-za-6SJ"/>
+                            <constraint firstItem="7On-30-riU" firstAttribute="top" secondItem="B8r-2W-fog" secondAttribute="bottom" constant="20" id="RHl-04-cm9"/>
+                            <constraint firstItem="kLn-iG-x2O" firstAttribute="top" secondItem="Azj-H2-lxE" secondAttribute="bottom" constant="20" id="S7V-zD-iSs"/>
+                            <constraint firstItem="Fed-K8-ZtB" firstAttribute="leading" secondItem="mFo-2E-HjG" secondAttribute="leading" id="San-vo-t4s"/>
+                            <constraint firstItem="7On-30-riU" firstAttribute="leading" secondItem="B8r-2W-fog" secondAttribute="leading" id="SsZ-OH-0RZ"/>
+                            <constraint firstItem="7On-30-riU" firstAttribute="leading" secondItem="Kej-8H-Qdj" secondAttribute="leading" id="Tvc-M7-YR5"/>
+                            <constraint firstItem="B8r-2W-fog" firstAttribute="top" secondItem="OeC-U0-Vsw" secondAttribute="bottom" constant="20" id="Z62-97-rVy"/>
+                            <constraint firstItem="GDi-AO-Hne" firstAttribute="top" secondItem="mFo-2E-HjG" secondAttribute="bottom" constant="20" id="Zf7-ip-JCI"/>
+                            <constraint firstItem="RF6-bJ-TGe" firstAttribute="top" secondItem="8WA-Yt-gwN" secondAttribute="bottom" constant="20" id="bgS-8t-MXp"/>
+                            <constraint firstItem="Fed-K8-ZtB" firstAttribute="leading" secondItem="Kej-8H-Qdj" secondAttribute="trailing" constant="30" id="dFg-aw-igb"/>
+                            <constraint firstItem="Pba-eu-dED" firstAttribute="trailing" secondItem="vta-M2-prL" secondAttribute="trailingMargin" id="eBb-uo-VmW"/>
+                            <constraint firstItem="RF6-bJ-TGe" firstAttribute="leading" secondItem="8WA-Yt-gwN" secondAttribute="leading" id="gFA-1W-tdu"/>
+                            <constraint firstItem="Kej-8H-Qdj" firstAttribute="leading" secondItem="OeC-U0-Vsw" secondAttribute="leading" id="gKh-vU-R4R"/>
+                            <constraint firstItem="cmb-Vs-vKw" firstAttribute="top" secondItem="UMV-p6-UWe" secondAttribute="bottom" constant="20" id="ha6-Js-XA2"/>
+                            <constraint firstItem="LNv-3X-08V" firstAttribute="top" secondItem="GDi-AO-Hne" secondAttribute="bottom" constant="20" id="haW-4N-qNo"/>
+                            <constraint firstAttribute="centerX" secondItem="Kej-8H-Qdj" secondAttribute="centerX" id="jfv-Qm-aa7"/>
+                            <constraint firstItem="Fed-K8-ZtB" firstAttribute="leading" secondItem="LNv-3X-08V" secondAttribute="leading" id="lRR-Sn-qOS"/>
+                            <constraint firstItem="mFo-2E-HjG" firstAttribute="leading" secondItem="Fed-K8-ZtB" secondAttribute="leading" id="meg-uc-vdx"/>
+                            <constraint firstItem="Kej-8H-Qdj" firstAttribute="leading" secondItem="UMV-p6-UWe" secondAttribute="trailing" constant="30" id="o5X-Cn-4aG"/>
+                            <constraint firstItem="kLn-iG-x2O" firstAttribute="top" secondItem="Yjq-g1-ltx" secondAttribute="bottom" constant="20" id="qT3-Hr-O5H"/>
+                            <constraint firstItem="7On-30-riU" firstAttribute="leading" secondItem="OeC-U0-Vsw" secondAttribute="leading" id="w4M-M8-W0B"/>
+                            <constraint firstItem="RF6-bJ-TGe" firstAttribute="leading" secondItem="cmb-Vs-vKw" secondAttribute="leading" id="w7i-QD-XgK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="U75-HA-mLf"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="BOC-X7-kxD" id="9n0-Hh-AJH"/>
+                        <outlet property="scoreLabel" destination="Azj-H2-lxE" id="7gp-oY-tU9"/>
+                        <outletCollection property="cardButtons" destination="UMV-p6-UWe" id="API-i6-r4C"/>
+                        <outletCollection property="cardButtons" destination="Kej-8H-Qdj" id="OSH-Oa-MN5"/>
+                        <outletCollection property="cardButtons" destination="Fed-K8-ZtB" id="ybz-iR-utc"/>
+                        <outletCollection property="cardButtons" destination="cmb-Vs-vKw" id="Utg-eX-zZ2"/>
+                        <outletCollection property="cardButtons" destination="OeC-U0-Vsw" id="f3D-p6-3Zs"/>
+                        <outletCollection property="cardButtons" destination="mFo-2E-HjG" id="Nd9-rC-ERf"/>
+                        <outletCollection property="cardButtons" destination="8WA-Yt-gwN" id="WJH-OC-j0O"/>
+                        <outletCollection property="cardButtons" destination="B8r-2W-fog" id="2JW-SJ-3Ho"/>
+                        <outletCollection property="cardButtons" destination="GDi-AO-Hne" id="uN2-97-k1k"/>
+                        <outletCollection property="cardButtons" destination="RF6-bJ-TGe" id="9j4-Hl-VJb"/>
+                        <outletCollection property="cardButtons" destination="7On-30-riU" id="fXM-bP-fXf"/>
+                        <outletCollection property="cardButtons" destination="LNv-3X-08V" id="2XR-3f-pkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQH-b3-jvd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="147"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardBack" width="128" height="192"/>
+        <image name="waterlooLogo" width="50" height="50"/>
+    </resources>
 </document>

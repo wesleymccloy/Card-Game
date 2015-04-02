@@ -1,0 +1,1079 @@
+
+========================
+ASL is here to serve you
+> 
+
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.567240 wlan.A[15222] AppleBCMWLANCore::configureActivePortsInToChip(): Added Discard Protocol Ports 7 and 9 : 
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.569199 wlan.A[15223] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.571424 wlan.A[15224] AppleBCMWLANCore::configureWoWAssociatedEntry():  Unicast IPv4 filter enabled (ID=102)
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.579423 wlan.A[15225] AppleBCMWLANCore::configureWoWAssociatedEntry():  ARP Offload enabled 
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.581288 wlan.A[15226] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  0 (ID=104)
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.583288 wlan.A[15227] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  1 (ID=105)
+Mar 31 18:36:10  kernel[0] <Debug>: AppleBCMWLAN Sleeping on BSS:   @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -45, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 84, ssid[ 7] = "KikWifi"
+Mar 31 18:36:10  kernel[0] <Debug>: 640076.606293 wlan.N[15228] AppleBCMWLANCore::powerOff():  Associated & WoW enabled, WiFi will remain up
+Mar 31 18:36:10  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 18:36:10  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 0 swapBusy: 0  fController: 0 -> 0
+Mar 31 18:36:10  kernel[0] <Debug>: pmu wake events: rtc
+Mar 31 19:01:04  CommCenter[62] <Notice>: Telling CSI to exit low power.
+Mar 31 19:01:04  kernel[0] <Debug>: AppleEmbeddedI2CLightSensor::preEmptiveSensorStartup. Turning on early
+Mar 31 19:01:04  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 1 swapBusy: 0  fController: 0 -> 0
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.165579 wlan.N[15229] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0xe0802, dev 0x87cb2000 (this 1, provider 0)
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.165694 wlan.N[15230] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.165748 wlan.N[15231] AppleBCMWLANCore::powerOn():  stateFlags(e0803)
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.181382 wlan.A[15232] AppleBCMWLANCore::powerOn():  Tearing down WoW mode
+Mar 31 19:01:04  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableDetect 0
+Mar 31 19:01:04  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableType Detached
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.392991 wlan.A[15233] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 19:01:04  kernel[0] <Debug>: AppleBCMWLAN Woke on same BSS:  @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -45, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 85, ssid[ 7] = "KikWifi"
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.397328 wlan.A[15234] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled IPv4 packet filter
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.399300 wlan.A[15235] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled ARP Offload:
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.403365 wlan.A[15236] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled Magic packet filter
+Mar 31 19:01:04  kernel[0] <Debug>: 640077.411670 wlan.A[15237] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled packet filters
+Mar 31 19:01:04  kernel[0] <Debug>: en0: BSSID changed to 06:01:01:0b:4e:88
+Mar 31 19:01:04  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 19:01:04  timed[17] <Notice>: (Note ) CoreTime: Received timezone "America/Toronto" from "Location"
+Mar 31 19:01:04  timed[17] <Notice>: (Note ) CoreTime: Current mcc: '302' simulated:'0'.
+Mar 31 19:01:04  timed[17] <Notice>: (Note ) CoreTime: Not setting time zone to America/Toronto from Location
+Mar 31 19:01:07  CLTM[13] <Error>: CLTM: resetting temps: now = 1427842867, last update = 1427841369
+Mar 31 19:01:17  CommCenter[62] <Notice>: Telling CSI to go low power.
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.579886 wlan.N[15238] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0xf0803, dev 0x87cb2000 (this 1, provider 0)
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.580114 wlan.N[15239] AppleBCMWLANCore::powerOffSystem():  : Powering Off and sleeping
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.580244 wlan.N[15240] AppleBCMWLANCore::powerOff():  fStateFlags(f0802)
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.610614 wlan.A[15241] AppleBCMWLANCore::getActivePortsFromNetworkStack(): Number of Active Ports in the System (Ports=7)
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.610806 wlan.A[15242] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 5353 : 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.610945 wlan.A[15243] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 49163 : 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.611084 wlan.A[15244] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 52839 : 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.611222 wlan.A[15245] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 62078 : 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.611359 wlan.A[15246] AppleBCMWLANCore::configureActivePortsInToChip(): Added Discard Protocol Ports 7 and 9 : 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.613446 wlan.A[15247] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.615395 wlan.A[15248] AppleBCMWLANCore::configureWoWAssociatedEntry():  Unicast IPv4 filter enabled (ID=102)
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.623392 wlan.A[15249] AppleBCMWLANCore::configureWoWAssociatedEntry():  ARP Offload enabled 
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.625472 wlan.A[15250] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  0 (ID=104)
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.627596 wlan.A[15251] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  1 (ID=105)
+Mar 31 19:01:17  kernel[0] <Debug>: AppleBCMWLAN Sleeping on BSS:   @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -44, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 10, ssid[ 7] = "KikWifi"
+Mar 31 19:01:17  kernel[0] <Debug>: 640090.650509 wlan.N[15252] AppleBCMWLANCore::powerOff():  Associated & WoW enabled, WiFi will remain up
+Mar 31 19:01:17  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 19:01:17  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 0 swapBusy: 0  fController: 0 -> 0
+Mar 31 19:01:17  kernel[0] <Debug>: pmu wake events: wlan
+Mar 31 19:23:23  CommCenter[62] <Notice>: Telling CSI to exit low power.
+Mar 31 19:23:23  kernel[0] <Debug>: AppleEmbeddedI2CLightSensor::preEmptiveSensorStartup. Turning on early
+Mar 31 19:23:23  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 1 swapBusy: 0  fController: 0 -> 0
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.207109 wlan.N[15253] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0xe0802, dev 0x87cb2000 (this 1, provider 0)
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.207223 wlan.N[15254] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.207278 wlan.N[15255] AppleBCMWLANCore::powerOn():  stateFlags(e0803)
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.222789 wlan.A[15256] AppleBCMWLANCore::powerOn():  Tearing down WoW mode
+Mar 31 19:23:23  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableDetect 0
+Mar 31 19:23:23  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableType Detached
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.429034 wlan.N[15257] AppleBCMWLANCore::systemWokenByWiFi():  Wake reason = wlan 
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.429111 wlan.A[15258] AppleBCMWLANCore::parseBdcTags():  Debug Code: Wake up packet received: BDC Tags
+Mar 31 19:23:23  kernel[0] <Debug>: AppleBCMWLANCore::parseBdcTags <0x8021d140> len 8 Data :12 06 00 BC 36 3A 65 26   .  F0 DC E2 CA 5B AC 00 90 0B 21 B8 32 08 00 
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.429241 wlan.N[15259] AppleBCMWLANCore::systemWokenByWiFi():  Wake reason = wlan 
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.429302 wlan.A[15260] AppleBCMWLANCore::handleDataPacket():  Wake up packet received: Data
+Mar 31 19:23:23  kernel[0] <Debug>: wlan Wakeup Packet: (359) f0dce2ca5bac00900b21b8320800450001591a0240003406136111ace85a0a0a142c01bbce6713cb5b63650449ec8018009b2d3800000101080a013a78794135b0df17030101203566c8c8b5b3d794e6d829523af62568eef608ecbde4d5e0952462f5e215f8921860530cce12e29a0a87a80f8eb3177d5305124f3ba90549da14b9fd017a6a3b671c1af3052c5c6ffca829dc5d9924f3694ed15c7637947116d02b39910b23e4d19d68a1d9724d122812c5db6de5bb6456db046ebd70b614874c657600669021eee2b65845009eb00b06fc023ed1cd45de280d8a839e9c76fbee925fbd62126c74b780f74c34c111866c966183e3300c1e24272cd6c35463e01c288b619d54c452dd23032566f70dc3d4639c7ef3ddab8f2be4145c41dcfb044a208af81400e20e5849284322b3ef0b3fb9ecb06dc7948933e87d5af2599bea62ac7f92890a649630791f9f908f9666135d34efaa29b2d1e8f7365a20183fc3087b4add722e1c
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.441489 wlan.A[15261] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 19:23:23  kernel[0] <Debug>: AppleBCMWLAN Woke on same BSS:  @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -44, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 11, ssid[ 7] = "KikWifi"
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.445733 wlan.A[15262] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled IPv4 packet filter
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.447749 wlan.A[15263] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled ARP Offload:
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.451723 wlan.A[15264] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled Magic packet filter
+Mar 31 19:23:23  kernel[0] <Debug>: 640091.459536 wlan.A[15265] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled packet filters
+Mar 31 19:23:23  kernel[0] <Debug>: en0: BSSID changed to 06:01:01:0b:4e:88
+Mar 31 19:23:23  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 19:23:23  backboardd[52] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Mar 31 19:23:23  backboardd[52] <Notice>: Posting 'com.apple.iokit.hid.displayStatus' notifyState=1
+Mar 31 19:23:23  CLTM[13] <Error>: CLTM: resetting temps: now = 1427844203, last update = 1427842872
+Mar 31 19:23:23  backboardd[52] <Notice>: MultitouchHID: detection mode: 255->3 (deferring until bootloaded)
+Mar 31 19:23:23  backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Mar 31 19:23:23  backboardd[52] <Notice>: MultitouchHID: detection mode: 3->3
+Mar 31 19:23:24  kernel[0] <Debug>: set_crc_notification_state 0
+Mar 31 19:23:24  kernel[0] <Debug>: ALS: AppleARMBacklight::handleMessageGated - framebufferState -> 1
+Mar 31 19:23:24  kernel[0] <Debug>: ALS: AppleARMBacklight::setBacklightEnableGated 1 (set level to 0x51b)
+Mar 31 19:23:24  configd[50] <Notice>: network changed: v4(en0:10.10.20.44) DNS Proxy
+Mar 31 19:24:08  backboardd[52] <Notice>: ALS: SetDisplayFactor: factor=0.0000
+Mar 31 19:24:08  kernel[0] <Debug>: ALS: AppleARMBacklight::setBacklightEnableGated 0 (set level to 0x1f7)
+Mar 31 19:24:08  backboardd[52] <Notice>: Posting 'com.apple.iokit.hid.displayStatus' notifyState=0
+Mar 31 19:24:08  backboardd[52] <Notice>: MultitouchHID: detection mode: 3->255
+Mar 31 19:24:09  kernel[0] <Debug>: AppleMultitouchN1SPI: updating power statistics
+Mar 31 19:24:09  kernel[0] <Debug>: ALS: AppleARMBacklight::handleMessageGated - framebufferState -> 0
+Mar 31 19:24:23  CommCenter[62] <Notice>: Telling CSI to go low power.
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.161139 wlan.N[15266] AppleBCMWLANCore::setPowerStateGated():   powerState 0, fStateFlags 0xf0803, dev 0x87cb2000 (this 1, provider 0)
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.161359 wlan.N[15267] AppleBCMWLANCore::powerOffSystem():  : Powering Off and sleeping
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.161487 wlan.N[15268] AppleBCMWLANCore::powerOff():  fStateFlags(f0802)
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.191894 wlan.A[15269] AppleBCMWLANCore::getActivePortsFromNetworkStack(): Number of Active Ports in the System (Ports=7)
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.192087 wlan.A[15270] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 5353 : 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.192225 wlan.A[15271] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 49163 : 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.192365 wlan.A[15272] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 52839 : 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.192502 wlan.A[15273] AppleBCMWLANCore::configureActivePortsInToChip(): Active Ports 62078 : 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.192638 wlan.A[15274] AppleBCMWLANCore::configureActivePortsInToChip(): Added Discard Protocol Ports 7 and 9 : 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.195022 wlan.A[15275] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.196882 wlan.A[15276] AppleBCMWLANCore::configureWoWAssociatedEntry():  Unicast IPv4 filter enabled (ID=102)
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.204885 wlan.A[15277] AppleBCMWLANCore::configureWoWAssociatedEntry():  ARP Offload enabled 
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.206881 wlan.A[15278] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  0 (ID=104)
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.208880 wlan.A[15279] AppleBCMWLANCore::configureWoWAssociatedEntry():  Enabled WOMP filter  1 (ID=105)
+Mar 31 19:24:24  kernel[0] <Debug>: AppleBCMWLAN Sleeping on BSS:   @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -48, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 72, ssid[ 7] = "KikWifi"
+Mar 31 19:24:24  kernel[0] <Debug>: 640152.231883 wlan.N[15280] AppleBCMWLANCore::powerOff():  Associated & WoW enabled, WiFi will remain up
+Mar 31 19:24:24  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 19:24:24  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 0 swapBusy: 0  fController: 0 -> 0
+Mar 31 19:51:53  CommCenter[62] <Notice>: Telling CSI to exit low power.
+Mar 31 19:24:24  kernel[0] <Debug>: pmu wake events: menu
+Mar 31 19:51:53  kernel[0] <Debug>: AppleEmbeddedI2CLightSensor::preEmptiveSensorStartup. Turning on early
+Mar 31 19:51:53  kernel[0] <Debug>: virtual void AppleRGBOUT::do_power_state_change(): fSoft: 0 fHard: 1 swapBusy: 0  fController: 0 -> 0
+Mar 31 19:51:53  kernel[0] <Debug>: 640152.790346 wlan.N[15281] AppleBCMWLANCore::setPowerStateGated():   powerState 1, fStateFlags 0xe0802, dev 0x87cb2000 (this 1, provider 0)
+Mar 31 19:51:53  kernel[0] <Debug>: 640152.790463 wlan.N[15282] AppleBCMWLANCore::powerOnSystem():  : Powering On
+Mar 31 19:51:53  kernel[0] <Debug>: 640152.790517 wlan.N[15283] AppleBCMWLANCore::powerOn():  stateFlags(e0803)
+Mar 31 19:51:53  kernel[0] <Debug>: 640152.795101 wlan.A[15284] AppleBCMWLANCore::powerOn():  Tearing down WoW mode
+Mar 31 19:51:53  backboardd[52] <Notice>: ALS: SetDisplayFactor: factor=1.0000
+Mar 31 19:51:53  backboardd[52] <Notice>: Posting 'com.apple.iokit.hid.displayStatus' notifyState=1
+Mar 31 19:51:53  backboardd[52] <Notice>: MultitouchHID: detection mode: 255->3 (deferring until bootloaded)
+Mar 31 19:51:53  backboardd[52] <Notice>: MultitouchHID: device bootloaded
+Mar 31 19:51:53  backboardd[52] <Notice>: MultitouchHID: detection mode: 3->3
+Mar 31 19:51:53  kernel[0] <Debug>: set_crc_notification_state 0
+Mar 31 19:51:53  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableDetect 0
+Mar 31 19:51:53  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableType Detached
+Mar 31 19:51:53  kernel[0] <Debug>: 640153.014856 wlan.A[15285] AppleBCMWLANCore::configureActivePortsInToChip(): Configured Packet Port List : success
+Mar 31 19:51:53  kernel[0] <Debug>: AppleBCMWLAN Woke on same BSS:  @ 0x81453400, BSSID = 06:01:01:0b:4e:88, rssi = -48, rate = 54 (100%), channel =  1, encryption = 0x8, ap = 1, failures =   0, age = 73, ssid[ 7] = "KikWifi"
+Mar 31 19:51:53  kernel[0] <Debug>: ALS: AppleARMBacklight::handleMessageGated - framebufferState -> 1
+Mar 31 19:51:53  kernel[0] <Debug>: ALS: AppleARMBacklight::setBacklightEnableGated 1 (set level to 0x4c1)
+Mar 31 19:51:53  kernel[0] <Debug>: 640153.020058 wlan.A[15286] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled IPv4 packet filter
+Mar 31 19:51:53  kernel[0] <Debug>: 640153.021844 wlan.A[15287] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled ARP Offload:
+Mar 31 19:51:53  kernel[0] <Debug>: 640153.025660 wlan.A[15288] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled Magic packet filter
+Mar 31 19:51:53  kernel[0] <Debug>: 640153.033624 wlan.A[15289] AppleBCMWLANCore::configureWoWAssociatedExit():  Disabled packet filters
+Mar 31 19:51:53  kernel[0] <Debug>: en0: BSSID changed to 06:01:01:0b:4e:88
+Mar 31 19:51:53  kernel[0] <Debug>: IO80211VirtualInterface::handleSIOCSIFFLAGS: ( flags & IFF_UP ) = false, _controllerLostPower = 0
+Mar 31 19:51:53  timed[17] <Notice>: (Note ) CoreTime: Received timezone "America/Toronto" from "Location"
+Mar 31 19:51:53  timed[17] <Notice>: (Note ) CoreTime: Current mcc: '302' simulated:'0'.
+Mar 31 19:51:53  timed[17] <Notice>: (Note ) CoreTime: Not setting time zone to America/Toronto from Location
+Mar 31 19:51:55  CLTM[13] <Error>: CLTM: resetting temps: now = 1427845915, last update = 1427844262
+Mar 31 19:51:57  profiled[1571] <Notice>: (Note ) profiled: Service starting...
+Mar 31 19:51:57  profiled[1571] <Notice>: (Note ) profiled: Recomputing passcode requirement message
+Mar 31 19:51:57  lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:51:58  lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:51:59  backboardd[52] <Notice>: MultitouchHID: detection mode: 3->1
+Mar 31 19:51:59  backboardd[52] <Notice>: MultitouchHID: detection mode: 1->3
+Mar 31 19:52:05  kernel[0] <Debug>: launchd[1575] Builtin profile: syncdefaultsd (sandbox)
+Mar 31 19:52:20  SpringBoard[69] <Warning>: could not save thumbnail for downloading icon: image=(null) path='/var/mobile/Library/SpringBoard/DownloadingIconImageCache/com.kik.chat-C37B83EB-20A2-47EA-802D-98FA36BE5EB6'
+Mar 31 19:52:49  SpringBoard[69] <Warning>: Killing com.kik.chat for app installation
+Mar 31 19:52:49  backboardd[52] <Warning>: pid_suspend failed for [1514]: Unknown error: -1, Unknown error: -1
+Mar 31 19:52:49  installd[31] <Error>: 0x2ff93000 handle_install: Install of "/var/mobile/Media/Downloads/3912301303528090848/-6825891394329731030" requested by itunesstored
+Mar 31 19:52:49  com.apple.launchd[1] <Notice>: (UIKitApplication:com.kik.chat[0xfabd]) Exited: Killed: 9
+Mar 31 19:52:49  backboardd[52] <Warning>: Application 'UIKitApplication:com.kik.chat[0xfabd]' exited abnormally with signal 9: Killed: 9
+Mar 31 19:52:57  profiled[1571] <Notice>: (Note ) profiled: Idled.
+Mar 31 19:52:57  profiled[1571] <Notice>: (Note ) profiled: Service stopping.
+Mar 31 19:53:03  installd[31] <Error>: 0x2ff93000 MobileInstallationInstall_Server: Installing app com.kik.chat
+Mar 31 19:53:04  installd[31] <Error>: Mar 31 19:53:04  SecTrustEvaluate  [leaf CriticalExtensions IssuerCommonName]
+Mar 31 19:53:09  installd[31] <Error>: entitlement 'com.apple.security.application-groups' has value not permitted by a provisioning profile
+Mar 31 19:53:10  installd[31] <Error>: 0x2ff93000 MobileInstallationInstall_Server: Staging: 14.50s; Waiting: 0.00s; Installation: 6.70s; LS Sync: 0.05s; Overall: 21.28s
+Mar 31 19:53:10  lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:53:10  lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:53:10  installd[31] <Error>: 0x2fe93000 __update_install_map_block_invoke_0: LS failed to register application com.kik.chat
+Mar 31 19:53:31  amfid[1580] <Error>: Mar 31 19:53:31  SecTrustEvaluate  [leaf CriticalExtensions IssuerCommonName]
+Mar 31 19:53:32  amfid[1580] <Error>: entitlement 'com.apple.security.application-groups' has value not permitted by a provisioning profile
+Mar 31 19:53:32  kernel[0] <Debug>: launchd[1579] Builtin profile: container (sandbox)
+Mar 31 19:53:32  kernel[0] <Debug>: launchd[1579] Container: /private/var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909 (sandbox)
+Mar 31 19:53:32  lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:53:32  Kik[1579] <Notice>: Loading retry count store at path /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/RetryCounts/retryCountMap.plist
+Mar 31 19:53:32  Kik[1579] <Notice>: FastLRUCache inline: 8 KB / 5120 KB, 0 / 1000 items in memory
+Mar 31 19:53:32  Kik[1579] <Notice>: FastLRUCache media_tray: 28 KB / 5120 KB, 0 / 1000 items in memory
+Mar 31 19:53:32  Kik[1579] <Notice>: Metrics directory: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics
+Mar 31 19:53:32  Kik[1579] <Notice>: MetricsManager created with user ID = no87.qa_8ti@talk.kik.com, device prefix = CIP
+Mar 31 19:53:32  Kik[1579] <Notice>: IAP storage is at: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/iapTransactionsBySKU
+Mar 31 19:53:33  Kik[1579] <Notice>: Core setup.
+Mar 31 19:53:33  Kik[1579] <Notice>: Attempting a connection
+Mar 31 19:53:33  Kik[1579] <Notice>: qosFlushStarted
+Mar 31 19:53:33  Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:33  Kik[1579] <Notice>: 1 stanzas left to send, 0 currently sending
+Mar 31 19:53:33  Kik[1579] <Notice>: Connecting using custom encryption
+Mar 31 19:53:33  Kik[1579] <Notice>: Using port 5222
+Mar 31 19:53:33  Kik[1579] <Notice>: Attempting connection on port 5222 with interface  - socket <GCDAsyncSocket: 0x1cda8ae0>
+Mar 31 19:53:33  Kik[1579] <Notice>: Writing stream headers (351 bytes)
+Mar 31 19:53:33  Kik[1579] <Notice>: Pre-sending stanzas
+Mar 31 19:53:33  Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:33  Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: ce4472e0-ec45-41cc-be74-a37979d98277
+Mar 31 19:53:33  Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:33  Kik[1579] <Notice>: Sending stanza ID: ce4472e0-ec45-41cc-be74-a37979d98277
+Mar 31 19:53:33  Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:53:33  Kik[1579] <Notice>: Sending 170 bytes of data...
+Mar 31 19:53:33  Kik[1579] <Notice>: ConversationsViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:33  Kik[1579] <Notice>: AppDelegate: applicationDidBecomeActive
+Mar 31 19:53:33  Kik[1579] <Notice>: ABM: full address book match is scheduled for 2015-04-30 22:04:49 +0000
+Mar 31 19:53:33  Kik[1579] <Notice>: ABM: differential time interval is set to 86400 seconds
+Mar 31 19:53:33  Kik[1579] <Notice>: ABM: differential scan is ready to start in 79875 seconds
+Mar 31 19:53:34  Kik[1579] <Notice>: FastLRUCache data_cache: 543 KB / 51200 KB, 0 / 8 items in memory
+Mar 31 19:53:34  Kik[1579] <Notice>: FastLRUCache metadata_cache: 0 KB / 5120 KB, 0 / 512 items in memory
+Mar 31 19:53:34  Kik[1579] <Notice>: XDATA: Server - asking for records
+Mar 31 19:53:34  Kik[1579] <Notice>: XDataManager is authenticated. Creating keys
+Mar 31 19:53:34  Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:34  Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:34  Kik[1579] <Notice>: 1 stanzas left to send, 1 currently sending
+Mar 31 19:53:34  Kik[1579] <Notice>: Already connected or connecting, skipping
+Mar 31 19:53:34  Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:34  Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:34  Kik[1579] <Notice>: MessageListScreenController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:34  Kik[1579] <Notice>: MediaBarViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:34  backboardd[52] <Warning>: CoreAnimation: updates deferred for too long
+Mar 31 19:53:34  Kik[1579] <Notice>: +[SBJsonStreamWriter initialize] NSCache supported
+Mar 31 19:53:34  Kik[1579] <Notice>: Event (Unsampled) App Opened -> {"Cold Start":true}
+Mar 31 19:53:34  Kik[1579] <Notice>: Event (Unsampled) App Session Started -> {}
+Mar 31 19:53:34  backboardd[52] <Warning>: CoreAnimation: timed out fence 248bf
+Mar 31 19:53:34  SpringBoard[69] <Warning>: CoreAnimation: failed to receive fence reply: 10004003
+Mar 31 19:53:34  backboardd[52] <Warning>: CoreAnimation: failed to send fence reply: 10000003
+Mar 31 19:53:34  Kik[1579] <Notice>: Queued Event (Sampled) App Opened -> {
+	    "Cold Start" = 1;
+	}
+Mar 31 19:53:34  Kik[1579] <Notice>: Queued Event (Sampled) App Session Started -> {
+	}
+Mar 31 19:53:34  Kik[1579] <Notice>: Identifying user as c1791744cff14b63859c7d9411ac850e (Sampled)
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from https://cards-sticker-dev.herokuapp.com/icon_square.png?v=5; 1 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from http://videos.kik.com/img/icon_square.png?v=5; 2 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from http://sketch.kik.com/icon_square.png?v=5; 3 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from http://image-search.kik.com/img/icon_square.png?v=5; 4 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from http://meme.kik.com/img/icon-square.png?v=5; 5 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Downloading data from https://home.kik.com/img/icon.png?v=5; 6 of 20 connections
+Mar 31 19:53:34  Kik[1579] <Notice>: Request for premium already inflight, bailing
+Mar 31 19:53:34  Kik[1579] <Notice>: Preloading home.kik.com
+Mar 31 19:53:36  UserEventAgent[13] <Warning>: PLAggregateState Error: Leaving state unplugged_asleep even though we are not in it, doing nothing
+Mar 31 19:53:36  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableDetect 1
+Mar 31 19:53:36  kernel[0] <Debug>: AppleD1881PMUPowerSource: AppleUSBCableType USBHost
+Mar 31 19:53:36  UserEventAgent[13] <Warning>: PLAggregateState Error: Leaving state unplugged_screen_off even though we are not in it, doing nothing
+Mar 31 19:53:36  UserEventAgent[13] <Warning>: PLAggregateState Error: Leaving state pluggedin_screen_off even though we are not in it, doing nothing
+Mar 31 19:53:37  kernel[0] <Debug>: launchd[1582] Builtin profile: ptpd (sandbox)
+Mar 31 19:53:37  webinspectord[1584] <Error>: libMobileGestalt copySystemVersionDictionaryValue: Could not lookup ReleaseType from system version dictionary
+Mar 31 19:53:37  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:37  kernel[0] <Debug>: lockbot[1585] Builtin profile: gputoolsd (sandbox)
+Mar 31 19:53:37  lockdownd[29] <Notice>: 01482000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:37  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:37  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01482000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01482000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01482000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01482000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  lockdownd[29] <Notice>: 01586000 set_response_error: handle_get_value GetProhibited
+Mar 31 19:53:38  Kik[1579] <Notice>: PopupMessageListScreenController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:38  Kik[1579] <Notice>: PopupMediaBarViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:38  ptpd[1582] <Error>: ptpd: startResponder
+Mar 31 19:53:39  DTFetchSymbols[1589] <Notice>: Found paths:
+Mar 31 19:53:39  DTFetchSymbols[1589] <Notice>: /usr/lib/dyld
+Mar 31 19:53:39  DTFetchSymbols[1589] <Notice>: /System/Library/Caches/com.apple.dyld/dyld_shared_cache_armv7
+Mar 31 19:53:39  DTFetchSymbols[1590] <Notice>: Found paths:
+Mar 31 19:53:39  DTFetchSymbols[1590] <Notice>: /usr/lib/dyld
+Mar 31 19:53:39  DTFetchSymbols[1590] <Notice>: /System/Library/Caches/com.apple.dyld/dyld_shared_cache_armv7
+Mar 31 19:53:39 QA-iPhone-4S ptpd[1582] <Notice>: PTP interface has been activated at high speed.
+Mar 31 19:53:43 QA-iPhone-4S Kik[1579] <Notice>: Connection failed: Error Domain=GCDAsyncSocketErrorDomain Code=3 "Attempt to connect to host timed out" UserInfo=0x1d82ec20 {NSLocalizedDescription=Attempt to connect to host timed out}
+Mar 31 19:53:43 QA-iPhone-4S Kik[1579] <Notice>: Requesting a new connection
+Mar 31 19:53:43 QA-iPhone-4S Kik[1579] <Notice>: Scheduling retry in: 1.000000
+Mar 31 19:53:43 QA-iPhone-4S Kik[1579] <Notice>: Data at https://cards-sticker-dev.herokuapp.com/icon_square.png?v=5 downloaded. Data size: 25673
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Suggesting retry
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Connection advised
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting a connection
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: qosFlushStarted
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Error loading browser history from XData
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 1 stanzas left to send, 1 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Connecting using custom encryption
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Using port 80
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting connection on port 80 with interface  - socket <GCDAsyncSocket: 0x1cdaa610>
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 9 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 2 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: d2d51ebd-4938-4067-9c29-f2d804f5fff7
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: d2d51ebd-4938-4067-9c29-f2d804f5fff7
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 1 stanzas left to send, 2 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Already connected or connecting, skipping
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Connected on interface 
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing stream headers (357 bytes)
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Pre-sending stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 1 stanzas left to send, 2 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending 151 bytes of data...
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Data at http://meme.kik.com/img/icon-square.png?v=5 downloaded. Data size: 3317
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Connected
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 81f7208b-9380-47e8-903a-e53eeb83309c
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 81f7208b-9380-47e8-903a-e53eeb83309c
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - retrying record updates
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: d2d51ebd-4938-4067-9c29-f2d804f5fff7
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 9 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 8e501bde-8a91-4541-a0ae-a2dec3848224
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 8e501bde-8a91-4541-a0ae-a2dec3848224
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - asking for records
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: b5ae711f-3bc6-44c0-b6ee-75b52c940ad5
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: b5ae711f-3bc6-44c0-b6ee-75b52c940ad5
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: jabber:iq:roster, ID: 8ad90c1f-b9c3-4d6d-a58b-2ba8889ae03a
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 8ad90c1f-b9c3-4d6d-a58b-2ba8889ae03a
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 5 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 81f7208b-9380-47e8-903a-e53eeb83309c
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: AnonymousId was in xData. It is ad7374edfcbc4b16bddb0546ae8ca59f
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Data at http://videos.kik.com/img/icon_square.png?v=5 downloaded. Data size: 1747
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - asking for records
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 7b930d4e-0ae0-4945-927c-51b90541c119
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 7b930d4e-0ae0-4945-927c-51b90541c119
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - asking for records
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 874e636b-8a66-4301-b25d-5205c351fc65
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 874e636b-8a66-4301-b25d-5205c351fc65
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 5 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Data at http://sketch.kik.com/icon_square.png?v=5 downloaded. Data size: 5091
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S lsd[77] <Warning>: LaunchServices: Could not store lsd-identifiers file
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 8e501bde-8a91-4541-a0ae-a2dec3848224
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: b5ae711f-3bc6-44c0-b6ee-75b52c940ad5
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 8ad90c1f-b9c3-4d6d-a58b-2ba8889ae03a
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Data at http://image-search.kik.com/img/icon_square.png?v=5 downloaded. Data size: 2928
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 7b930d4e-0ae0-4945-927c-51b90541c119
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 874e636b-8a66-4301-b25d-5205c351fc65
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 310
+	extra data: {
+	    rt = 12064;
+	    s = 1;
+	}
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846024886.metrics
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Connection state changed to: YES
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 311
+	extra data: {
+	    bt = "505.7549998164177";
+	    ct = "1598.583996295929";
+	    customEncryption = 1;
+	    portFailover = 1;
+	    qt = "791.1359667778015";
+	    s = 1;
+	}
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846024895.metrics
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: qosAcksFinished
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Identifying user as c1791744cff14b63859c7d9411ac850e (Sampled)
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Sucessfully migrated history in XData
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - network retry operation succeeded
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - no records exist for key sticker_pack
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Updating user public key: kikteam - <>
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 0 groups updated, 1 user changes
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 10 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - no records exist for key browser_domain_info
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: Erorr loading browser permissions from XData
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 11 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:53:44 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - no records exist for key user_preferences
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - invalid values for records
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Error loading prefs from XData
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 344
+	extra data: {
+	    connectedViaCell = 0;
+	    connectionAttempts = 2;
+	    coreSetupTime = 875;
+	    coreViewSetupTime = "396.2109088897705";
+	    customEncryption = 1;
+	    didBecomeActiveTime = "939.0068054199219";
+	    isColdBoot = 1;
+	    isConnected = 0;
+	    portFailover = 1;
+	    qosPerformed = 1;
+	    qosProcessTime = "11848.61397743225";
+	    qosRetryAttempts = 1;
+	    qosSize = 0;
+	    qosStoreTime = "0.01597404479980469";
+	    qosXmlTime = "0.1220703125";
+	    readyTime = "12182.64985084534";
+	    timeInBackground = 0;
+	}
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846025010.metrics
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 12 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:53:45 QA-iPhone-4S backboardd[52] <Notice>: MultitouchHID: detection mode: 3->1
+Mar 31 19:53:45 QA-iPhone-4S backboardd[52] <Notice>: MultitouchHID: detection mode: 1->3
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 326c058f-4371-4ebc-aa59-6a82e575fe0e
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Opened -> {}
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 326c058f-4371-4ebc-aa59-6a82e575fe0e
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: ComposeScreenController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: ComposeTableViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Request for premium already inflight, bailing
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 326c058f-4371-4ebc-aa59-6a82e575fe0e
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: ComposeScreenController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Data at https://home.kik.com/img/icon.png?v=5 downloaded. Data size: 38938
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Fetched premium list, 0 entries
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Successfully update user prefs to xData
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: ff5b8d27-0ce4-46ac-b0d5-530af3996fd7
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: ff5b8d27-0ce4-46ac-b0d5-530af3996fd7
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:53:45 QA-iPhone-4S Kik[1579] <Notice>: Event Premium Promoted Chat View -> {"Bots":[]}
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.herokuapp.crusher.test Test 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.card.sticker.adventuretime Adventure Time Sticker Pack 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.card.sticker.happytreefriends Happy Tree Friends Sticker Pack 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.card.sticker.mylittlepony My Little Pony Sticker Pack 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.card.sticker.smileyworld Smiley World Sticker Pack 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.card.sticker.southpark South Park Sticker Pack 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.runbun.large Large Pack of Buns 3.49 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.runbun.medium Medium Pack of Buns 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.runbun.small Small Pack of Buns 1.19 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.10000coins 10,000 Coins 22.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.2000coins 2,000 Coins 5.79 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.350coins 350 Coins 1.19 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.4500coins 4,500 Coins 11.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.750coins 750 Coins 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: com.kik.cards.wtf.adremove 1 Word Ad Removal 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.costumeparty.kik.1500coins 1500 Coins 11.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.costumeparty.kik.2500coins 2500 Coins 16.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.costumeparty.kik.250coins 250 Coins 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.costumeparty.kik.5000coins 5000 Coins 28.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.costumeparty.kik.700coins 700 Coins 5.79 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.accessorize Accessorize Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.alphabot Alphabot Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.colorpop ColorPop Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.faceit Face It Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.getall9 All Sticker Packs for Stickerfy 11.99 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.halloween Halloween Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.masked Masked Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.photomash PhotoMash Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.saysomething Say Something Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.sketchy Sketchy Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.tasty Tasty Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Found product: us.stickerfy.kik.xoxo XOXO Sticker Pack for Stickerfy 2.29 CAD
+Mar 31 19:53:46 QA-iPhone-4S Kik[1579] <Notice>: Fetched promoted list, 0 entries
+Mar 31 19:53:47 QA-iPhone-4S Kik[1579] <Notice>: GroupStagingProfileChatInfoViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:47 QA-iPhone-4S Kik[1579] <Notice>: Event Start Group Screen Visited -> {"Source":"Talk To"}
+Mar 31 19:53:48 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Info Shown -> {}
+Mar 31 19:53:56 QA-iPhone-4S Kik[1579] <Notice>: ContactMultiselectController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:56 QA-iPhone-4S Kik[1579] <Notice>: ComposeTableViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:53:56 QA-iPhone-4S Kik[1579] <Notice>: Fetched premium list, 0 entries
+Mar 31 19:53:57 QA-iPhone-4S Kik[1579] <Notice>: Fetched promoted list, 0 entries
+Mar 31 19:53:57 QA-iPhone-4S Kik[1579] <Notice>: Event Premium Promoted Chat View -> {"Bots":[]}
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Performing network search for user: Wes
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Disconnected with reason: stanza timeout
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Requesting a new connection
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Scheduling retry in: 1.000000
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: 1 stanzas left to send, 0 currently sending
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Retry already scheduled, skipping
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 323
+	extra data: {
+	    s = 0;
+	}
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846039280.metrics
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 2 stanzas
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: 2 stanzas left to send, 0 currently sending
+Mar 31 19:53:59 QA-iPhone-4S Kik[1579] <Notice>: Retry already scheduled, skipping
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Suggesting retry
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Connection advised
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting a connection
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: qosFlushStarted
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 3 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: 3 stanzas left to send, 0 currently sending
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Connecting using custom encryption
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Using port 80
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting connection on port 80 with interface  - socket <GCDAsyncSocket: 0x1f591050>
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Writing stream headers (366 bytes)
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Pre-sending stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 3 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: 0fa290fe-519e-4ce1-b227-a352b5592b4d
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 0fa290fe-519e-4ce1-b227-a352b5592b4d
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: 2 stanzas left to send, 1 currently sending
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Sending 170 bytes of data...
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Performing network search for user: Wes40
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 3 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: 3 stanzas left to send, 1 currently sending
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Already connected or connecting, skipping
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 323
+	extra data: {
+	    s = 0;
+	}
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846040633.metrics
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 4 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: 4 stanzas left to send, 1 currently sending
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Already connected or connecting, skipping
+Mar 31 19:54:00 QA-iPhone-4S Kik[1579] <Notice>: Connected on interface 
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Connected
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 4 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: 3cdce1a3-ba86-41a9-b1f8-74af7b15d3d9
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: 02714e5e-6530-4152-a6ec-b37d0d5f4ef0
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: bb164f5c-118c-468f-b959-660a81f8c432
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: ab772465-b93d-4643-8d51-6a38c612ab55
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 4 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 3cdce1a3-ba86-41a9-b1f8-74af7b15d3d9
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 02714e5e-6530-4152-a6ec-b37d0d5f4ef0
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: bb164f5c-118c-468f-b959-660a81f8c432
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: ab772465-b93d-4643-8d51-6a38c612ab55
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 5 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDataManager already has keys
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Stanza queue limit (5) reached, not sending new stanzas (1 need sending)
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - empty record exists for key browser_domain_info
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records retrieved
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Erorr loading browser permissions from XData
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: jabber:iq:roster, ID: 3edccee2-adfa-497a-a2f6-739ca29a4465
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 3edccee2-adfa-497a-a2f6-739ca29a4465
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 5 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 0fa290fe-519e-4ce1-b227-a352b5592b4d
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Identifying user as c1791744cff14b63859c7d9411ac850e (Sampled)
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 311
+	extra data: {
+	    bt = "816.1069974303246";
+	    ct = "1859.312951564789";
+	    customEncryption = 1;
+	    portFailover = 1;
+	    qt = "889.2139792442322";
+	    s = 0;
+	}
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846041171.metrics
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: qosAcksFinished
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 3cdce1a3-ba86-41a9-b1f8-74af7b15d3d9
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 12 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Updating user public key: Wes - <>
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 0 groups updated, 1 user changes
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 12 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 12 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 12 records saved to X_DATA_STORAGE_FILENAME
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Disk - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 02714e5e-6530-4152-a6ec-b37d0d5f4ef0
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: d96bff42-db66-4500-b355-5abaab368548
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: d96bff42-db66-4500-b355-5abaab368548
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: ab772465-b93d-4643-8d51-6a38c612ab55
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 10507c4a-b287-4022-a99e-c69ca52a4764
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 10507c4a-b287-4022-a99e-c69ca52a4764
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 295b34a2-005c-4a9f-ac71-7170c447754e
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 295b34a2-005c-4a9f-ac71-7170c447754e
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - updating records...
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 1 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:xdata, ID: 1917a63f-a595-45b3-b8f8-0d2767187a68
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 1917a63f-a595-45b3-b8f8-0d2767187a68
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 5 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 4 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 3edccee2-adfa-497a-a2f6-739ca29a4465
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: bb164f5c-118c-468f-b959-660a81f8c432
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: ********* wes40_o66@talk.kik.com shouldUpdatePicture = YES
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Updating user public key: wes40 - <>
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 0 groups updated, 1 user changes
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: d96bff42-db66-4500-b355-5abaab368548
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Successfully update user prefs to xData
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 10507c4a-b287-4022-a99e-c69ca52a4764
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 295b34a2-005c-4a9f-ac71-7170c447754e
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Successfully update user prefs to xData
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Successfully update user prefs to xData
+Mar 31 19:54:01 QA-iPhone-4S backboardd[52] <Notice>: MultitouchHID: detection mode: 3->1
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S backboardd[52] <Notice>: MultitouchHID: detection mode: 1->3
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 1917a63f-a595-45b3-b8f8-0d2767187a68
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: 0 records saved to recordsToUpload
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: XDATA: Server - records updated
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Critical>: [USER PREFS] Successfully update user prefs to xData
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: 94c88ef8-5ad8-48a7-a968-52ce28b17309
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 94c88ef8-5ad8-48a7-a968-52ce28b17309
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Performing network search for user: Wes40.qa
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: 867ac652-4d47-4aac-aaff-030a2d54b7b8
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 867ac652-4d47-4aac-aaff-030a2d54b7b8
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 323
+	extra data: {
+	    s = 0;
+	}
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846041909.metrics
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: c71ca393-62c8-4634-856d-757986851389
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: c71ca393-62c8-4634-856d-757986851389
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:01 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 867ac652-4d47-4aac-aaff-030a2d54b7b8
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: ********* wes40.qa_l7b@talk.kik.com shouldUpdatePicture = YES
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Updating user public key: wes40.qa - <30563010 06072a86 48ce3d02 0106052b 8104000a 03420004 a05e647b abc3a4fb 7e1bf258 afac626a da977fc2 8f46c5a4 fb8f33d9 76bed96f 2dcace31 e29490b8 716ad70c 07d41d16 3f790a10 6098a223 17014429 d8bad0c9>
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 0 groups updated, 1 user changes
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Event User Search Complete -> {"Was Inline":true}
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Inline Search User Returned -> {"Lookup Error":false,"Query Length":8,"User Found":true}
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: c71ca393-62c8-4634-856d-757986851389
+Mar 31 19:54:02 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Inline Search Group Returned -> {"Group Found":false,"Query Length":8,"Has Octothorpe":false,"Lookup Error":false}
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Found user locally: Wes
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Event User Search Complete -> {"Was Inline":true}
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Inline Search User Returned -> {"Lookup Error":false,"Query Length":3,"User Found":true}
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 323
+	extra data: {
+	    s = 0;
+	}
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846056326.metrics
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: 73adab74-c2ad-47b4-9586-0b9a99304d64
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 73adab74-c2ad-47b4-9586-0b9a99304d64
+Mar 31 19:54:16 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Performing network search for user: Wes41.qa
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: 72603105-bf40-4d29-9266-0cf968f6fbd1
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 72603105-bf40-4d29-9266-0cf968f6fbd1
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 323
+	extra data: {
+	    s = 0;
+	}
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846058388.metrics
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: 7811137f-de4b-456c-a75c-ac5ca8d8badf
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 7811137f-de4b-456c-a75c-ac5ca8d8badf
+Mar 31 19:54:18 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:54:18 QA-iPhone-4S kernel[0] <Debug>: 640298.496258 wlan.A[15290] AppleBCMWLANNetManager::checkRealTimeTraffic():  now 640298.496250166 num entries 4
+Mar 31 19:54:20 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:20 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:20 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:22 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 73adab74-c2ad-47b4-9586-0b9a99304d64
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 7811137f-de4b-456c-a75c-ac5ca8d8badf
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 72603105-bf40-4d29-9266-0cf968f6fbd1
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Inline Search Group Returned -> {"Group Found":false,"Query Length":8,"Has Octothorpe":false,"Lookup Error":false}
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: ********* wes41.qa_yty@talk.kik.com shouldUpdatePicture = YES
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Updating user public key: wes41.qa - <30563010 06072a86 48ce3d02 0106052b 8104000a 03420004 5b004115 5363046f e5a24ac0 d9f96db4 5c4513a3 befca724 13dcfb17 047c4756 1fb8c076 81cf3a8a 7fa55fed d62d17cb 22f7cbff 493ebfca d7a7ce3a d527b325>
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 0 groups updated, 1 user changes
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: We tried to configure a cell that didn't belong to a user
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Event User Search Complete -> {"Was Inline":true}
+Mar 31 19:54:25 QA-iPhone-4S Kik[1579] <Notice>: Event Talk To Inline Search User Returned -> {"Lookup Error":false,"Query Length":8,"User Found":true}
+Mar 31 19:54:27 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Info Shown -> {}
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: Event Group Create Attempt -> {"Tag Length":0,"Participants Count":3,"Name Length":0,"Has Picture":false,"Tag Lookup Attempts":0}
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:groups:admin, ID: 4b83e0f3-133f-4202-8cb7-e8413c6dd45a
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 4b83e0f3-133f-4202-8cb7-e8413c6dd45a
+Mar 31 19:54:29 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 4b83e0f3-133f-4202-8cb7-e8413c6dd45a
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Event Group Created -> {"Tag Length":0,"Participants Count":3,"Name Length":0,"Has Picture":false}
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: 2f2c3cc4-1da8-471d-9435-770f1d096c0e
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 2f2c3cc4-1da8-471d-9435-770f1d096c0e
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Conversation Opened with referer: GroupStagingProfileChatInfoViewController, is a new conversation: NO
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 333
+	extra data: {
+	    new = 0;
+	    referer = GroupStagingProfileChatInfoViewController;
+	}
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846073234.metrics
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 2f2c3cc4-1da8-471d-9435-770f1d096c0e
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 1 skipped group updates, 0 groups updated, 0 user changes
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Skipping updates, no changes
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: jabber:iq:roster, ID: 2ceb5f50-3ada-4003-a852-b1c93c7e529e
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 2ceb5f50-3ada-4003-a852-b1c93c7e529e
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Event Message Received -> {"Is First Message in Chat":true,"Is Chat Open":true,"Is Group":false,"Is Contact":false,"Is Kik Team":false,"Is Encrypted":false,"Has Tag":false}
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: e5d2c2d0-6388-40ec-b628-22ee53c413a8
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: e5d2c2d0-6388-40ec-b628-22ee53c413a8
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:friend, ID: 7f7c493c-8f3d-48d9-becb-cd19b049366f
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 7f7c493c-8f3d-48d9-becb-cd19b049366f
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 3 currently sending
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Creating user client metric:
+	type: 312
+	extra data: {
+	    c = 2;
+	}
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846073706.metrics
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Opened -> {"Unseen Messages":0,"Is Muted":false,"Is Group":true,"Content Link Shown":false,"Participants Count":2,"Is Contact":false,"From New Message":false,"Is Kik Team":false,"Was Empty":false}
+Mar 31 19:54:33 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Session Started -> {"Unseen Messages":0,"Is Muted":false,"Is Group":true,"Content Link Shown":false,"Participants Count":2,"Is Contact":false,"From New Message":false,"Is Kik Team":false,"Was Empty":false}
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 2ceb5f50-3ada-4003-a852-b1c93c7e529e
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: 0 skipped group updates, 1 groups updated, 2 user changes
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: e5d2c2d0-6388-40ec-b628-22ee53c413a8
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 7f7c493c-8f3d-48d9-becb-cd19b049366f
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Prune messages for chat (1 messages)
+Mar 31 19:54:34 QA-iPhone-4S Kik[1579] <Notice>: Prune cancelled; not enough messages.
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: CameraTrayViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: change device (0) mode (1) format (0)
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: change device (0) mode (0) format (0)
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: d132551e-ff4d-497d-a912-59e34e90b097
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: d132551e-ff4d-497d-a912-59e34e90b097
+Mar 31 19:54:35 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: 3bd3430e-c79d-47bc-97c6-f77180531cde
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 3bd3430e-c79d-47bc-97c6-f77180531cde
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Event Message Sent -> {"New Line Count":0,"Is Kik Team":false,"Message Type":"Text","Smiley Count":0,"Is Content":false,"Word Count":1,"Ends With Newline":false,"Is Verified":false,"Is Group":true,"Letter Count":3,"Is Muted":false,"Time Since Last Message Received":6.872934877872467,"Has Tag":false,"Network Is Connected":true}
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: fe2a7762-309d-4856-8e7e-54c10ba91750
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: fe2a7762-309d-4856-8e7e-54c10ba91750
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Event Message Stanza Sent -> {"Is Encryption Failure":0,"Is Encrypted":true,"Encryption Time":0.028325080871582031}
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Creating packet client metric:
+	type: 300
+	packet id: 3bd3430e-c79d-47bc-97c6-f77180531cde
+	extra data: {
+	    t = 324;
+	}
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846076527.metrics
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Creating packet client metric:
+	type: 301
+	packet id: 3bd3430e-c79d-47bc-97c6-f77180531cde
+	extra data: {
+	    id = "3bd3430e-c79d-47bc-97c6-f77180531cde";
+	    live = 1;
+	    spts = 1427846076710;
+	}
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846076549.metrics
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:36 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Prune messages for chat (2 messages)
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Prune cancelled; not enough messages.
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: 6f3795b4-0d39-4ced-958a-50d056ce934d
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 6f3795b4-0d39-4ced-958a-50d056ce934d
+Mar 31 19:54:37 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:38 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:38 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:38 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: f3b909f7-46dd-4961-8880-fb49727506ef
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: f3b909f7-46dd-4961-8880-fb49727506ef
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Event Message Sent -> {"New Line Count":0,"Is Kik Team":false,"Message Type":"Text","Smiley Count":0,"Is Content":false,"Word Count":2,"Ends With Newline":false,"Is Verified":false,"Is Group":true,"Letter Count":7,"Is Muted":false,"Time Since Last Message Received":4.0459880232810974,"Has Tag":false,"Network Is Connected":true}
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: 41bd108b-9c24-4203-833b-145713bbaa55
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 41bd108b-9c24-4203-833b-145713bbaa55
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Event Message Stanza Sent -> {"Is Encryption Failure":0,"Is Encrypted":true,"Encryption Time":0.0016849040985107422}
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Creating packet client metric:
+	type: 300
+	packet id: f3b909f7-46dd-4961-8880-fb49727506ef
+	extra data: {
+	    t = 165;
+	}
+Mar 31 19:54:40 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846080413.metrics
+Mar 31 19:54:41 QA-iPhone-4S Kik[1579] <Notice>: Prune messages for chat (3 messages)
+Mar 31 19:54:41 QA-iPhone-4S Kik[1579] <Notice>: Prune cancelled; not enough messages.
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: e7abc3db-8ab1-4fe6-83c6-fb02a1e9efa4
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: e7abc3db-8ab1-4fe6-83c6-fb02a1e9efa4
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: 8547fa34-ecff-4130-9d84-442b85f3131c
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 8547fa34-ecff-4130-9d84-442b85f3131c
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: e7abc3db-8ab1-4fe6-83c6-fb02a1e9efa4
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:54:44 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 8547fa34-ecff-4130-9d84-442b85f3131c
+Mar 31 19:54:46 QA-iPhone-4S Kik[1579] <Notice>: ProfileChatInfoViewController has not overridden setupAccessibilityIdentifiers.
+Mar 31 19:54:47 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Closed -> {"Is Muted":false}
+Mar 31 19:54:47 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Info Shown -> {}
+Mar 31 19:54:50 QA-iPhone-4S Kik[1579] <Notice>: Event Chat Opened -> {"Unseen Messages":0,"Is Muted":false,"Is Group":true,"Content Link Shown":false,"Participants Count":2,"Is Contact":true,"From New Message":false,"Is Kik Team":false,"Was Empty":false}
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: Event Media Tray Opened -> {"Is Landscape":false,"Is Maximized":false}
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: CameraTray - View will appear
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: Event Switched Tab -> {"Is Maximized":false,"Is Landscape":false,"Start Tab":"Gallery","End Tab":"Gallery","Is Swipe":true}
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: camera setup
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: switchDevice 1 switchMode 1
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: capture session setup
+Mar 31 19:54:51 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::setPowerStateGated: 1
+Mar 31 19:54:51 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::power_on_hardware
+Mar 31 19:54:51 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::ISP_SelectBestMIPIFrequencyIndex_gated - channel: 0, index: 0
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: session was started
+Mar 31 19:54:51 QA-iPhone-4S Kik[1579] <Notice>: capture session running
+Mar 31 19:54:52 QA-iPhone-4S Kik[1579] <Notice>: CameraTray - View will appear
+Mar 31 19:54:52 QA-iPhone-4S Kik[1579] <Notice>: Event Switched Tab -> {"Is Maximized":false,"Is Landscape":false,"Start Tab":"Camera","End Tab":"Camera","Is Swipe":true}
+Mar 31 19:54:52 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::ISP_SelectBestMIPIFrequencyIndex_gated - channel: 0, index: 0
+Mar 31 19:54:53 QA-iPhone-4S Kik[1579] <Notice>: starting video capture
+Mar 31 19:54:53 QA-iPhone-4S Kik[1579] <Notice>: ready for video (1)
+Mar 31 19:54:53 QA-iPhone-4S Kik[1579] <Notice>: audio stream setup, channels (1) sampleRate (44100.000000)
+Mar 31 19:54:53 QA-iPhone-4S Kik[1579] <Notice>: ready for audio (1)
+Mar 31 19:55:02 QA-iPhone-4S Kik[1579] <Notice>: ending video capture
+Mar 31 19:55:04 QA-iPhone-4S Kik[1579] <Notice>: Content upload for content ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe
+Mar 31 19:55:04 QA-iPhone-4S timed[17] <Notice>: (Note ) CoreTime: Received timezone "America/Toronto" from "Location"
+Mar 31 19:55:04 QA-iPhone-4S timed[17] <Notice>: (Note ) CoreTime: Current mcc: '302' simulated:'0'.
+Mar 31 19:55:04 QA-iPhone-4S timed[17] <Notice>: (Note ) CoreTime: Not setting time zone to America/Toronto from Location
+Mar 31 19:55:04 QA-iPhone-4S Kik[1579] <Notice>: FastLRUCache data_cache: 2176 KB / 51200 KB, 1 / 8 items in memory
+Mar 31 19:55:04 QA-iPhone-4S Kik[1579] <Notice>: Event Message Sent -> {"Is Verified":false,"Is Content":true,"Message Type":"Video Camera","Time Since Last Message Received":24.284965991973877,"Is Group":true,"Network Is Connected":true,"Layout Style":"video","Is Muted":false,"Is Kik Team":false,"Text Message Attached":false,"Has Tag":false}
+Mar 31 19:55:05 QA-iPhone-4S Kik[1579] <Notice>: CameraTray - View did disappear
+Mar 31 19:55:05 QA-iPhone-4S Kik[1579] <Notice>: Prune messages for chat (4 messages)
+Mar 31 19:55:05 QA-iPhone-4S Kik[1579] <Notice>: Prune cancelled; not enough messages.
+Mar 31 19:55:06 QA-iPhone-4S Kik[1579] <Notice>: Event Media Tray Opened -> {"Is Landscape":false,"Is Maximized":false}
+Mar 31 19:55:06 QA-iPhone-4S Kik[1579] <Notice>: CameraTray - View will appear
+Mar 31 19:55:06 QA-iPhone-4S Kik[1579] <Notice>: Event Switched Tab -> {"Is Maximized":false,"Is Landscape":false,"Start Tab":"Camera","End Tab":"Camera","Is Swipe":true}
+Mar 31 19:55:16 QA-iPhone-4S Kik[1579] <Notice>: starting video capture
+Mar 31 19:55:16 QA-iPhone-4S Kik[1579] <Notice>: ready for video (1)
+Mar 31 19:55:16 QA-iPhone-4S Kik[1579] <Notice>: audio stream setup, channels (1) sampleRate (44100.000000)
+Mar 31 19:55:16 QA-iPhone-4S Kik[1579] <Notice>: ready for audio (1)
+Mar 31 19:55:16 QA-iPhone-4S Kik[1579] <Notice>: ending video capture
+Mar 31 19:55:17 QA-iPhone-4S Kik[1579] <Notice>: Content upload for content ID: 61a30362-45d2-4fe2-878f-e9f13eeea2aa
+Mar 31 19:55:18 QA-iPhone-4S Kik[1579] <Notice>: FastLRUCache data_cache: 2323 KB / 51200 KB, 2 / 8 items in memory
+Mar 31 19:55:18 QA-iPhone-4S Kik[1579] <Notice>: Event Message Sent -> {"Is Verified":false,"Is Content":true,"Message Type":"Video Camera","Time Since Last Message Received":13.480722069740295,"Is Group":true,"Network Is Connected":true,"Layout Style":"video","Is Muted":false,"Is Kik Team":false,"Text Message Attached":false,"Has Tag":false}
+Mar 31 19:55:19 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe. Chunk completed: 0.
+Mar 31 19:55:19 QA-iPhone-4S Kik[1579] <Notice>: Prune messages for chat (5 messages)
+Mar 31 19:55:19 QA-iPhone-4S Kik[1579] <Notice>: Prune cancelled; not enough messages.
+Mar 31 19:55:19 QA-iPhone-4S Kik[1579] <Notice>: CameraTray - View did disappear
+Mar 31 19:55:20 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe. Chunk completed: 1.
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe. Chunk completed: 2.
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe. Succeeded!
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: fe147abb-a5b5-4de8-bb91-bedd1e44973e
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: fe147abb-a5b5-4de8-bb91-bedd1e44973e
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Content manager - upload manager finished uploading content with ID: 8a8d1e3d-f357-40c4-85ba-8c79189a5afe
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: FastLRUCache metadata_cache: 1 KB / 5120 KB, 1 / 512 items in memory
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Event Message Stanza Sent -> {"Is Encryption Failure":false,"Is Encrypted":true,"Encryption Time":0.013298988342285156}
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Event Content Uploaded -> {"Encryption Time":0.049487829208374023,"Is Encrypted":true,"App Id":"com.kik.ext.video-camera","Is Content Encryption Reupload":false,"Content Size":1671673}
+Mar 31 19:55:22 QA-iPhone-4S mediaserverd[37] <Error>: 19:55:22.800 <CAListenerProxy> AURemoteIO::ChangeHardwareFormats: error -10875
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: capture session stopped
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: session was stopped
+Mar 31 19:55:22 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::setPowerStateGated: 0
+Mar 31 19:55:22 QA-iPhone-4S kernel[0] <Debug>: AppleH4CamIn::power_off_hardware
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 61a30362-45d2-4fe2-878f-e9f13eeea2aa. Chunk completed: 0.
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Upload for content ID: 61a30362-45d2-4fe2-878f-e9f13eeea2aa. Succeeded!
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Writing stanza ID: ed009fa8-8f93-48d6-be0c-7caa57a79e08
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: ed009fa8-8f93-48d6-be0c-7caa57a79e08
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:55:22 QA-iPhone-4S Kik[1579] <Notice>: Content manager - upload manager finished uploading content with ID: 61a30362-45d2-4fe2-878f-e9f13eeea2aa
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: FastLRUCache metadata_cache: 1 KB / 5120 KB, 2 / 512 items in memory
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Event Message Stanza Sent -> {"Is Encryption Failure":false,"Is Encrypted":true,"Encryption Time":0.019615888595581055}
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Event Content Uploaded -> {"Encryption Time":0.0060350894927978516,"Is Encrypted":true,"App Id":"com.kik.ext.video-camera","Is Content Encryption Reupload":false,"Content Size":150865}
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Creating packet client metric:
+	type: 300
+	packet id: fe147abb-a5b5-4de8-bb91-bedd1e44973e
+	extra data: {
+	    t = 18635;
+	}
+Mar 31 19:55:23 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846123169.metrics
+Mar 31 19:55:24 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:55:24 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:55:24 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:55:24 QA-iPhone-4S Kik[1579] <Notice>: Creating packet client metric:
+	type: 300
+	packet id: ed009fa8-8f93-48d6-be0c-7caa57a79e08
+	extra data: {
+	    t = 6513;
+	}
+Mar 31 19:55:24 QA-iPhone-4S Kik[1579] <Notice>: Client metric created at file path: /var/mobile/Applications/226B5B34-122E-43ED-8292-E31414B5A909/Documents/Metrics/1427846124528.metrics
+Mar 31 19:55:29 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:55:29 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: b9f9575d-9da4-4fbe-bc9d-3ae0816bac3e
+Mar 31 19:55:29 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:55:29 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: b9f9575d-9da4-4fbe-bc9d-3ae0816bac3e
+Mar 31 19:55:29 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 1 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Writing IQ type: kik:iq:QoS, ID: 91dd44cb-a0f7-4e30-95ad-a65dd065f7e2
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Sent 1 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Sending stanza ID: 91dd44cb-a0f7-4e30-95ad-a65dd065f7e2
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 2 currently sending
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 1 currently sending
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: b9f9575d-9da4-4fbe-bc9d-3ae0816bac3e
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Attempting to send 0 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Sent 0 stanzas
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: 0 stanzas left to send, 0 currently sending
+Mar 31 19:55:30 QA-iPhone-4S Kik[1579] <Notice>: Received Iq: 91dd44cb-a0f7-4e30-95ad-a65dd065f7e2
