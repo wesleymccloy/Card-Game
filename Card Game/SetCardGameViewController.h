@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Wesley. All rights reserved.
 //
 
-#import "CardGameViewController.h"
 #import "MasterCardGameViewController.h"
 
 @interface SetCardGameViewController : MasterCardGameViewController

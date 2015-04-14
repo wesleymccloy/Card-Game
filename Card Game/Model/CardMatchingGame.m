@@ -1,49 +1,19 @@
 //
-//  CardMatchingGame.m
+//  BetterCardMatchingGame.m
 //  Card Game
 //
-//  Created by Wesley on 2015-03-13.
+//  Created by Wesley on 2015-03-31.
 //  Copyright (c) 2015 Wesley. All rights reserved.
 //
 
 #import "CardMatchingGame.h"
 
-@interface CardMatchingGame()
-@property (nonatomic, readwrite) NSInteger score;
-@property (strong, nonatomic) NSMutableArray *cards; // of Card
-@end
-
 @implementation CardMatchingGame
 
-- (NSMutableArray *)cards
-{
-    if (!_cards) _cards = [[NSMutableArray alloc] init];
-    return _cards;
-}
-
-- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
+- (instancetype) init //not sure if this is necessary
 {
     self = [super init];
-    if  (self)
-    {
-        for (int i = 0; i < count; i++) {
-            Card *card = [deck drawRandomCard];
-            if (card) {
-                [self.cards addObject:card];
-            } else {
-                self = nil;
-                break;
-            }
-        }
-    }
-    
     return self;
-}
-
-
-- (Card *)cardAtIndex:(NSUInteger)index
-{
-    return (index < [self.cards count]) ? self.cards[index] : nil;
 }
 
 static const int MISMATCH_PENALTY = 2;
@@ -52,6 +22,7 @@ static const int COST_TO_CHOOSE = 1;
 
 - (void)chooseCardAtIndex:(NSUInteger)index
 {
+    NSLog(@"running chooseCardAtIndex in BetterCardMatchingGame.m");
     Card *card = [self cardAtIndex:index];
     NSMutableArray *otherCards = [[NSMutableArray alloc] init];
     int numberSelected = 0;
@@ -84,6 +55,7 @@ static const int COST_TO_CHOOSE = 1;
                 }
             }
             self.score -= COST_TO_CHOOSE;
+            NSLog(@"setting chosen to YES");
             card.chosen = YES;
         } else {
             NSLog(@"entered 3 match mode");
@@ -108,7 +80,7 @@ static const int COST_TO_CHOOSE = 1;
                     for(Card *individualCard in otherCards) {
                         individualCard.matched = YES;
                     }
-                        
+                    
                 } else {
                     NSLog(@"failed to match :(");
                     self.activityText = @"Mismatch penalty :(";
@@ -121,8 +93,11 @@ static const int COST_TO_CHOOSE = 1;
                 }
             }
             self.score -= COST_TO_CHOOSE;
+            NSLog(@"setting chosen to YES");
             card.chosen = YES;
         }
     }
 }
+
+
 @end

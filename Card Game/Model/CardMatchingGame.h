@@ -1,24 +1,13 @@
 //
-//  CardMatchingGame.h
+//  BetterCardMatchingGame.h
 //  Card Game
 //
-//  Created by Wesley on 2015-03-13.
+//  Created by Wesley on 2015-03-31.
 //  Copyright (c) 2015 Wesley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "Deck.h"
+#import "MasterGame.h"
 
-@interface CardMatchingGame : NSObject
-
-
-// designated initializer
-- (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
-
-- (void)chooseCardAtIndex:(NSUInteger)index;
-- (Card *)cardAtIndex:(NSUInteger)index;
-
-@property (nonatomic, readonly) NSInteger score;
-@property (nonatomic, getter=isMatchThree) BOOL MatchThree; //should subclass
-@property (strong, nonatomic) NSString *activityText;
+@interface CardMatchingGame : MasterGame
+@property (nonatomic, getter=isMatchThree) BOOL MatchThree;
 @end

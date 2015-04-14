@@ -1,14 +1,14 @@
 //
-//  PlayingCardGameViewController.h
+//  BetterPlayingCardGameViiewControllerViewController.h
 //  Card Game
 //
-//  Created by Wesley on 2015-03-25.
+//  Created by Wesley on 2015-03-31.
 //  Copyright (c) 2015 Wesley. All rights reserved.
 //
 
-#import "CardGameViewController.h"
+#import "MasterCardGameViewController.h"
+#import "CardMatchingGame.h"
 
-@interface PlayingCardGameViewController : CardGameViewController
+@interface PlayingCardGameViewController : MasterCardGameViewController
 
 @end
-
