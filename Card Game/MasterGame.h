@@ -16,4 +16,5 @@
 @property (nonatomic, readwrite) NSInteger score;
 @property (strong, nonatomic) NSMutableArray *cards; // of Card
 @property (strong, nonatomic) NSString *activityText;
+@property (nonatomic, getter=isMatchThree) BOOL MatchThree; //can't seem to not have this
 @end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nLV-R8-0nS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fpe-M1-vRl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -354,20 +354,6 @@
                                     <action selector="modeSelectorSegmentedControl:" destination="qyr-yd-Omw" eventType="valueChanged" id="O0n-Xf-oi0"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-eu-dED">
-                                <rect key="frame" x="538" y="501" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Deal"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="dealButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Pxg-9Y-IaR"/>
-                                </connections>
-                            </button>
                             <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-p6-UWe">
                                 <rect key="frame" x="175" y="20" width="64" height="90"/>
                                 <constraints>
@@ -536,6 +522,20 @@
                                     <action selector="touchCardButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="bc4-Z6-YSE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-eu-dED">
+                                <rect key="frame" x="538" y="501" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Deal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dealButton:" destination="qyr-yd-Omw" eventType="touchUpInside" id="Pxg-9Y-IaR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -598,6 +598,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQH-b3-jvd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2224" y="147"/>
+        </scene>
+        <!--Playing Card View Controller-->
+        <scene sceneID="PCR-lk-JOa">
+            <objects>
+                <viewController id="fpe-M1-vRl" customClass="PlayingCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LPc-wt-4Yc"/>
+                        <viewControllerLayoutGuide type="bottom" id="4c2-dQ-wQx"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Wbx-it-Hik">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CP5-N7-SH0" customClass="PlayingCardView">
+                                <rect key="frame" x="83" y="92" width="233" height="389"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yll-br-tMp" appends="YES" id="y9l-yG-tx9"/>
+                                    <outletCollection property="gestureRecognizers" destination="KDC-kJ-8mi" appends="YES" id="FqQ-jP-LeM"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.4392156862745098" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="CP5-N7-SH0" id="xml-0i-k5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcS-zk-jry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="yll-br-tMp"/>
+                <swipeGestureRecognizer direction="right" id="KDC-kJ-8mi">
+                    <connections>
+                        <action selector="swipe:" destination="fpe-M1-vRl" id="3xG-FT-SnW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2870" y="151"/>
         </scene>
     </scenes>
     <resources>

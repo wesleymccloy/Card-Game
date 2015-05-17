@@ -40,8 +40,8 @@
 }
 
 - (IBAction)modeSelectorSegmentedControl:(UISegmentedControl *)sender { //can I put this in subclass somehow?
-    //self.game.MatchThree  = [sender selectedSegmentIndex];
-  //  self.activityLabel.text = self.game.isMatchThree ? @"Match Three mode selected" : @"Match Two mode selected";
+    self.game.MatchThree  = [sender selectedSegmentIndex];
+    self.activityLabel.text = self.game.isMatchThree ? @"Match Three mode selected" : @"Match Two mode selected";
 }
 
 @end
