@@ -7,12 +7,25 @@
 //
 
 #import "SetCardGameViewController.h"
+#import "SetCardDeck.h"
+#import "SetGame.h"
 
 @interface SetCardGameViewController ()
 
 @end
 
 @implementation SetCardGameViewController
+
+- (Deck *) createDeck
+{
+    return [[SetCardDeck alloc] init];
+}
+
+- (SetGame *)createGame
+{
+    return [[SetGame alloc] initWithCardCount:[self.cardButtons count]
+                                    usingDeck: [self createDeck]];
+}
 
 
 @end

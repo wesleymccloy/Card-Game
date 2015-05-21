@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Wesley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MasterGame.h"
 
-@interface SetGame : NSObject
+@interface SetGame : MasterGame
 
 @end

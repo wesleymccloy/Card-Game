@@ -14,6 +14,4 @@
 @property (nonatomic) NSUInteger symbol; //1,2,3
 @property (nonatomic) NSUInteger shading; //1,2,3
 
-
-
 @end

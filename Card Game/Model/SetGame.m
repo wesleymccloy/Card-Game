@@ -10,4 +10,9 @@
 
 @implementation SetGame
 
+-(void)chooseCardAtIndex:(NSUInteger)index
+{
+    
+}
+
 @end

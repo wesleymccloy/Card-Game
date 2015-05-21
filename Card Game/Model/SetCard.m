@@ -42,4 +42,35 @@
     return [NSString stringWithFormat:@"%d%d%d", self.number, self.symbol, self.shading];
 }
 
+- (int)match:(NSArray *)otherCards
+{
+    if ([otherCards count] == 2) {
+        id firstCard = [otherCards firstObject];
+        id secondCard = [otherCards lastObject];
+        if ([firstCard isKindOfClass:[SetCard class]] && [secondCard isKindOfClass:[SetCard class]]) {
+            SetCard *first = (SetCard *)firstCard;
+            SetCard *second = (SetCard *)secondCard;
+            if (first.number == second.number == self.number) {
+            } else if (!(first.number == second.number || first.number == self.number || second.number == self.number)) {
+            } else {
+                return 0;
+            }
+            if (first.symbol == second.symbol == self.symbol) {
+            } else if (!(first.symbol == second.symbol || first.symbol == self.symbol || second.symbol == self.symbol)) {
+            } else {
+                return 0;
+            }
+            if (first.shading == second.shading == self.shading) {
+                return 1;
+            } else if (!(first.shading == second.shading || first.shading == self.shading || second.shading == self.shading)) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    }
+    return 0;
+}
+
+
 @end
